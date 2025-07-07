@@ -1,0 +1,162 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/sprite";
+@import "utils/fluid-font";
+@import "utils/functions";
+@import "utils/animations";
+
+:root {
+  --vh: 1vh;
+  accent-color: $white;
+}
+
+html {
+  font-family: $primary-font, Arial, serif;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-optical-sizing: auto;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #ffffff;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input {
+  &::placeholder {
+    color: $semiblack;
+  }
+  &::-webkit-input-placeholder {
+    color: $semiblack;
+  }
+  &:-moz-placeholder {
+    color: $semiblack;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $semiblack;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $semiblack;
+  }
+  &::-ms-input-placeholder {
+    color: $semiblack;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgba(56, 50, 43, 1) inset !important;
+    -webkit-text-fill-color: $white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.body {
+  width: 100%;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  background-color: $white;
+  border-radius: toRem(32);
+  
+  height: toRem(64);
+  width: toRem(64);
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  filter: invert(1);
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+//Модули
+@import "modules/modules";

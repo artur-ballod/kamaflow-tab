@@ -1,0 +1,49 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="static/css/styles.css")
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+    body.body
+        main.main
+            .project-content
+                ul.tabs
+                    li(data-tab-id="description").tabs-button Описание
+                    li(data-tab-id="parameters").tabs-button Параметры
+                    li(data-tab-id="team").tabs-button Команда
+                    li(data-tab-id="analytics").tabs-button.active Аналитика
+                .content-container
+                    .project-description.description.tab-content
+                        p 1
+                    .project-description.parameters.tab-content
+                        p 2
+                    .project-description.team.tab-content
+                        p 3
+
+                    .project-description.analytics.tab-content.active
+                        .analytic
+                            .indicator-container
+                            .analytic-content
+                                .analytic-aside
+                                .analytic-data
+                        .analytic-controls
+                            button(type="button" disabled).analytic-controls__btn.js-prev
+                            button(type="button").analytic-controls__btn.js-next
+
+        script(src="static/js/libs.js")
+        script(src="static/js/main.js")
+        block script

@@ -1,0 +1,371 @@
+.project-content {
+    width: 100%;
+	max-width: toRem(1700);
+    @include flex-setting(column, flex-start, flex-start);
+	margin: 0 auto;
+
+    .tabs {
+        display: flex;
+        align-items: center;
+        gap: toRem(20);
+        margin-bottom: toRem(40);
+    }
+}
+
+.content-container {
+    width: 100%;
+    display: block;
+	margin: 0 auto;
+
+	@include min-screen(768px) {
+		width: 100%;
+		display: flex;
+		gap: toRem(40);
+		margin: 0 auto;
+	}
+}
+
+.project-description {
+    width: 100%;
+    display: none;
+
+	@include min-screen(768px) {
+		width: 70%;
+	}
+
+    &.active {
+        display: flex;
+    }
+
+	&.analytics {
+		flex-direction: column;
+		align-items: center;
+		gap: toRem(24);
+	}
+}
+
+/* data container styles */
+.analytic {
+	width: 100%;
+	max-width: toRem(894);
+	display: flex;
+	flex-direction: column;
+	gap: toRem(16);
+	align-items: end;
+}
+
+.analytic-content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 36.086% 63.914%;
+
+	@include min-screen(1000px) {
+		padding-right: toRem(4);
+		padding-top: toRem(5);
+		padding-bottom: toRem(5);
+		max-height: toRem(668);
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			width: toRem(4);
+			border-radius: toRem(6);
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #CECECE;
+			border-radius: toRem(6);
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: #F2F2F2;
+			border-radius: toRem(6);
+		}
+	}
+}
+
+.analytic-aside {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: toRem(16);
+	
+	&__block {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border: toRem(1) solid #f0f0f0;
+		border-radius: toRem(8) 0 0 toRem(8);
+	}
+
+	&__title {
+		padding: toRem(3) toRem(15);
+		@include font-setting($primary-font, toRem(12), toRem(14), 700, #000000);
+	}
+
+	&__subtitle {
+		display: inline-flex;
+		flex-direction: column;
+		min-height: toRem(21);
+		padding: toRem(3) toRem(15);
+		border-top: toRem(1) solid #f0f0f0;
+
+		&-text {
+			@include font-setting($primary-font, toRem(12), toRem(14), 400, #000000);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			text-align: left;
+			pointer-events: none;
+		}
+
+		&.clicked {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			height: toRem(170);
+		}
+	}
+	
+	&__frame {
+		position: absolute;
+		background-color: #ffffff;
+		border-top: toRem(1) solid #f0f0f0;
+		// border-bottom: toRem(1) solid #f0f0f0;
+		height: calc(100% - 20px);
+		left: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 toRem(24);
+		z-index: 5;
+
+		@include min-screen(1000px) {
+			justify-content: flex-end;
+			padding-right: toRem(93);
+		}
+	}
+}
+
+.indicator-container {
+	width: 100%;
+	max-width: 63.914%;
+	display: flex;
+
+	@include min-screen(1000px) {
+		padding-right: toRem(8);
+	}
+
+	&__block {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: toRem(8);
+		padding: toRem(4) 0;
+		@include font-setting($primary-font, toRem(12), toRem(14), 500, #ffffff);
+
+		&.before {
+			background-color: #3ECB22;
+		}
+
+		&.current {
+			background-color: #34A3DC;
+		}
+
+		&.after {
+			color: #000000;
+			background-color: #F1F1F1;
+		}
+	}
+}
+
+.analytic-data {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+
+	@include min-screen(480px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@include min-screen(1000px) {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	&__block {
+		width: 100%;
+		display: flex;
+		gap: toRem(16);
+		flex-direction: column;
+		align-items: center;
+
+		&:last-of-type {
+			.analytic-data__month {
+				border-radius: 0 toRem(8) toRem(8) 0;
+			}
+
+			.analytic-data__group ul {
+				border-radius: 0 toRem(8) toRem(8) 0;
+			}
+
+			&.current {
+				.analytic-data__group ul {
+					border-radius: toRem(8);
+				}
+			}
+		}
+	}
+
+	&__block.current {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: calc(100% + 0.5625rem);
+			height: calc(100% + 0.5625rem);
+			background-color: #E8FBFF;
+			border: toRem(1) solid #CEEFF6;
+			border-radius: toRem(8);
+			top: toRem(-5);
+			left: toRem(-5);
+		}
+
+		.analytic-data__month {
+			z-index: 2;
+			background-color: #ffffff;
+			border-radius: toRem(8);
+		}
+
+		.analytic-data__group {
+			z-index: 2;
+		}
+
+		.analytic-data__list {
+			border-radius: toRem(8);
+			overflow: hidden;
+		}
+
+		.start-item {
+			background-color: #ffffff;
+		}
+
+		.analytic-data__item {
+			background-color: #ffffff;
+		}
+	}
+
+	&__group {
+		width: 100%;
+		min-height: toRem(21);
+	}
+
+	&__month {
+		width: 100%;
+		padding: toRem(3) toRem(15);
+		@include font-setting($primary-font, toRem(12), toRem(14), 700, #000000);
+		text-align: center;
+		border: toRem(1) solid #f0f0f0;
+
+		&:first-of-type {
+			border-left: none;
+		}
+	}
+
+	ul.empty {
+		height: toRem(21);
+	}
+
+	.start-item {
+		height: toRem(20);
+	}
+
+	&__list {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border: toRem(1) solid #f0f0f0;
+		border-left: none;
+	}
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: toRem(2);
+		min-height: toRem(21);
+		padding: toRem(3) toRem(4);
+		border-top: toRem(1) solid #f0f0f0;
+		@include font-setting($primary-font, toRem(12), toRem(14), 400, #000000);
+		white-space: nowrap;
+
+		.result {
+			padding: toRem(2) toRem(4);
+			border-radius: toRem(4);
+			font-size: toRem(10);
+			line-height: toRem(10);
+
+			&.gain {
+				background-color: #90FA7B;
+			}
+
+			&.loss {
+				background-color: #FFB7B8;
+			}
+		}
+
+		&.clicked {
+			background-color: #F8F8F8;
+			margin-bottom: toRem(149);
+			// height: toRem(170);
+		}
+	}
+
+	&__inner {
+		position: relative;
+		height: toRem(149);
+	}
+}
+
+.analytic-aside__subtitle.hovered,
+.analytic-data__item.hovered {
+  	background-color: #f0f0f0;
+  	// Другие стили для ховер-эффекта
+}
+
+.analytic-controls {
+	width: auto;
+	display: flex;
+	gap: toRem(8);
+
+	&__btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: toRem(64);
+		height: toRem(64);
+		border-radius: toRem(32);
+		border: toRem(1) solid #34A3DC;
+		background-color: #34A3DC;
+		background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.27167 2.41421L7.68589 1L19 12.3141L7.68701 23.6271L6.2728 22.2129L16.1716 12.3141L6.27167 2.41421Z' fill='white'/%3E%3C/svg%3E%0A");
+		background-position: 50% 50%;
+		background-size: toRem(24) toRem(24);
+		background-repeat: no-repeat;
+		transition: 0.2s ease-in;
+
+		&:disabled {
+			background-color: #F6F6F6;
+			border-color: #E5E4E4;
+			background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.27167 2.41421L7.68589 1L19 12.3141L7.68701 23.6271L6.2728 22.2129L16.1716 12.3141L6.27167 2.41421Z' fill='%23939598'/%3E%3C/svg%3E%0A");
+		}
+
+		&.js-prev {
+			transform: scaleX(-1);
+		}
+	}
+}
