@@ -3,7 +3,6 @@ const concat = require('gulp-concat');
 
 const vendorsScripts = [
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/slick-carousel/slick/slick.min.js',
 ];
 
 module.exports = function vendors(cb) {
