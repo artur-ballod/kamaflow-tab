@@ -1,3 +1,7 @@
+.tab-content.active {
+  width: 100%;
+}
+
 /* data container styles */
 .analytic {
   width: 100%;
@@ -13,6 +17,11 @@
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: end; }
+
+.analytic ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 .analytic-content {
   width: 100%;
