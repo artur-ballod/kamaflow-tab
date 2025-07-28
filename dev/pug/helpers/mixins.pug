@@ -1,0 +1,12 @@
+mixin setting(type, label, placeholder, name, info)
+	li.settings__item
+		.settings__wrap
+			label.settings__label(for=type)= label
+			input.settings__input(type=type name=name id=type placeholder=placeholder disabled)
+			button(type="button" data-field=name).settings__btn
+		if (info)
+			.settings__info.settings__info--hidden
+				span.settings__note Пожалуйста, подтвердите адрес электронной почты
+				span.settings__action
+					button(type="button") Отправить 
+					| сообщение на почту еще один раз.

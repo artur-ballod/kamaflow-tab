@@ -1,0 +1,83 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="static/css/styles.css")
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+    body.body
+        main.main
+            section.settings
+                h1.settings__title Настройки
+
+                ul.settings__list
+                    +setting('text', 'ФИО', 'Введите ваше имя и фамилию', 'full_name', false)
+                    +setting('email', 'Электронная почта', 'Введите адрес электронной почты', 'email', true)
+                    +setting('password', 'Пароль', 'Введите новый пароль', 'password', false)
+                    +setting('tel', 'Телефон', 'Введите номер телефона', 'phone', false)
+        // Dialogs
+        dialog.dialog.dialog--email#email-dialog
+            .dialog__content
+                h2.dialog__title Изменение адреса электронной почты
+                p.dialog__description На указанный вам адрес электронной почты будет отправлено письмо со ссылкой. Перейдите по ней - это подтвердит, что почта указана верно.
+            button(type="button" id="email-dialog-close").dialog__close
+        
+        dialog.dialog.dialog--password#password-dialog
+            .dialog__content
+                h2.dialog__title Изменить пароль
+                form.dialog__form#password-form
+                    input(type="password" placeholder="Введите пароль" required).dialog__input
+                    input(type="password" placeholder="Новый пароль" required).dialog__input
+                    input(type="password" placeholder="Повторите пароль" required).dialog__input
+                    button.dialog__submit(type="submit") Сохранить
+            button(type="button" id="password-dialog-close").dialog__close
+
+        dialog.dialog.dialog--phone#phone-dialog
+            .dialog__content
+                h2.dialog__title Изменить номер телефона
+                p.dialog__description Пришлем код подтверждения на номер 
+                    span.dialog__description-tel#current-phone +7 123 456 78 90
+                form.dialog__form.dialog__form--tel#phone-code-form
+                    input(type="text" id="confirmation-code" placeholder="Введите код подтверждения" required).dialog__input
+                    button(type="button" id="resend-code").dialog__resend Оправить новый код через 
+                        span.dialog__resend-count
+                    button(type="button" id="next-step").dialog__submit Далее
+            button(type="button" id="phone-dialog-close").dialog__close
+
+        dialog.dialog.dialog--phone#phone-new-dialog
+            .dialog__content
+                h2.dialog__title Введите новый номер телефона
+                p.dialog__description Номер будет использоваться для защиты аккаунта.
+                form.dialog__form#new-phone-form
+                    input(type="tel" id="new-phone" placeholder="Новый номер телефона" required).dialog__input
+                    button(type="button" id="send-new-code").dialog__submit Далее
+            button(type="button" id="phone-new-dialog-close").dialog__close
+        
+        dialog.dialog.dialog--phone#phone-confirm-dialog
+            .dialog__content
+                h2.dialog__title Введите код подтверждения
+                p.dialog__description Пришлем код подтверждения на номер 
+                    span.dialog__description-tel#new-phone-number +7 123 456 78 90
+                form.dialog__form.dialog__form--tel#confirm-code-form
+                    input(type="text" id="confirm-code" placeholder="Введите код подтверждения" required).dialog__input
+                    button(type="button" id="resend-new-code").dialog__resend Оправить новый код через 
+                        span.dialog__resend-count 
+                    button(type="button" id="send-new-phone").dialog__submit Отправить
+            button(type="button" id="phone-code-dialog-close").dialog__close
+
+        script(src="static/js/libs.js")
+        script(src="static/js/settings.js")
+        block script

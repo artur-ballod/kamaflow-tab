@@ -1,0 +1,109 @@
+.settings {
+	width: 100%;
+	padding: toRem(68) toRem(12);
+	@include flex-setting(column, flex-start, flex-start);
+	gap: toRem(40);
+
+	&__title {
+		@include font-setting($primary-font, toRem(40), toRem(44), 700, $black);
+		margin: 0;
+	}
+
+	&__list {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@include flex-setting(column, flex-start, flex-start);
+		gap: toRem(12);
+	}
+
+	&__item {
+		width: 100%;
+		@include flex-setting(column, flex-start, flex-start);
+		gap: toRem(8);
+	}
+
+	&__wrap {
+		width: 100%;
+		position: relative;
+		@include flex-setting(column, space-between, flex-start);
+		padding: toRem(8) toRem(60) toRem(8) toRem(16);
+		border: toRem(1) solid #E8E8E8;
+		border-radius: toRem(12);
+		background-color: #F9F9F9;
+	}
+
+	&__label {
+		@include font-setting($primary-font, toRem(14), 114%, 400, #969696);
+	}
+
+	&__input {
+		width: 100%;
+		border: none;
+		padding: 0;
+		@include font-setting($primary-font, toRem(16), 137%, 400, #000);
+		background-color: transparent;
+		outline: none;
+	
+		&::placeholder {
+			color: #969696;
+			opacity: 0.5;
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 50%;
+		right: toRem(16);
+		transform: translateY(-50%);
+		width: toRem(20);
+		height: toRem(20);
+		background-color: transparent;
+		border: none;
+		@include flex-setting(center, center, center);
+		background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 12.3751V15.5001H3.625L12.8417 6.28346L9.71667 3.15846L0.5 12.3751ZM15.2583 3.8668C15.5833 3.5418 15.5833 3.0168 15.2583 2.6918L13.3083 0.741797C12.9833 0.416797 12.4583 0.416797 12.1333 0.741797L10.6083 2.2668L13.7333 5.3918L15.2583 3.8668Z' fill='%23969696'/%3E%3C/svg%3E%0A");
+		background-size: 50%;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		cursor: pointer;
+
+		&--active {
+			background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 12.3751V15.5001H3.625L12.8417 6.28346L9.71667 3.15846L0.5 12.3751ZM15.2583 3.8668C15.5833 3.5418 15.5833 3.0168 15.2583 2.6918L13.3083 0.741797C12.9833 0.416797 12.4583 0.416797 12.1333 0.741797L10.6083 2.2668L13.7333 5.3918L15.2583 3.8668Z' fill='%23ff6163'/%3E%3C/svg%3E%0A");
+		}
+	}
+
+	&__info {
+		width: 100%;
+		padding-left: toRem(16);
+		@include flex-setting(column, flex-start, flex-start);
+		gap: toRem(6);
+	}
+
+	&__note,
+	&__action {
+		@include font-setting($primary-font, toRem(14), 114%, 400, #969696);
+	}
+	
+	&__note {
+		color: #ff6163;
+	}
+
+	&__action {
+		@include flex-setting(row, center, center);
+		gap: toRem(4);
+	}
+
+	&__action button {
+		color: #969696;
+		text-decoration: underline;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+
+	&__info--hidden {
+		display: none;
+	}
+}

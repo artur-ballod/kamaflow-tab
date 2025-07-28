@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head><!--test ver only-->
+    <meta name="robots" content="noindex"><!--end of test ver only-->
+    <meta charset="utf-8">
+    <title>KAMAFLOW settings</title><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"><!--test ver only-->
+    <meta name="robots" content="noindex"><!--end of test ver only-->
+</head>
+
+<body class="body">
+    <main class="main">
+        <section class="settings">
+            <h1 class="settings__title">Настройки</h1>
+            <ul class="settings__list">
+                <li class="settings__item">
+                    <div class="settings__wrap"><label class="settings__label" for="text">ФИО</label><input class="settings__input" type="text" name="full_name" id="text" placeholder="Введите ваше имя и фамилию" disabled="disabled" /><button class="settings__btn" type="button" data-field="full_name"></button></div>
+                </li>
+                <li class="settings__item">
+                    <div class="settings__wrap"><label class="settings__label" for="email">Электронная почта</label><input class="settings__input" type="email" name="email" id="email" placeholder="Введите адрес электронной почты" disabled="disabled" /><button class="settings__btn" type="button" data-field="email"></button></div>
+                    <div class="settings__info settings__info--hidden"><span class="settings__note">Пожалуйста, подтвердите адрес электронной почты</span><span class="settings__action"><button type="button">Отправить </button>сообщение на почту еще один раз.</span></div>
+                </li>
+                <li class="settings__item">
+                    <div class="settings__wrap"><label class="settings__label" for="password">Пароль</label><input class="settings__input" type="password" name="password" id="password" placeholder="Введите новый пароль" disabled="disabled" /><button class="settings__btn" type="button" data-field="password"></button></div>
+                </li>
+                <li class="settings__item">
+                    <div class="settings__wrap"><label class="settings__label" for="tel">Телефон</label><input class="settings__input" type="tel" name="phone" id="tel" placeholder="Введите номер телефона" disabled="disabled" /><button class="settings__btn" type="button" data-field="phone"></button></div>
+                </li>
+            </ul>
+        </section>
+    </main><!-- Dialogs-->
+    <dialog class="dialog dialog--email" id="email-dialog">
+        <div class="dialog__content">
+            <h2 class="dialog__title">Изменение адреса электронной почты</h2>
+            <p class="dialog__description">На указанный вам адрес электронной почты будет отправлено письмо со ссылкой. Перейдите по ней - это подтвердит, что почта указана верно.</p>
+        </div><button class="dialog__close" type="button" id="email-dialog-close"></button>
+    </dialog>
+    <dialog class="dialog dialog--password" id="password-dialog">
+        <div class="dialog__content">
+            <h2 class="dialog__title">Изменить пароль</h2>
+            <form class="dialog__form" id="password-form"><input class="dialog__input" type="password" placeholder="Введите пароль" required><input class="dialog__input" type="password" placeholder="Новый пароль" required><input class="dialog__input" type="password" placeholder="Повторите пароль" required><button class="dialog__submit" type="submit">Сохранить</button></form>
+        </div><button class="dialog__close" type="button" id="password-dialog-close"></button>
+    </dialog>
+    <dialog class="dialog dialog--phone" id="phone-dialog">
+        <div class="dialog__content">
+            <h2 class="dialog__title">Изменить номер телефона</h2>
+            <p class="dialog__description">Пришлем код подтверждения на номер <span class="dialog__description-tel" id="current-phone">+7 123 456 78 90</span></p>
+            <form class="dialog__form dialog__form--tel" id="phone-code-form"><input class="dialog__input" type="text" id="confirmation-code" placeholder="Введите код подтверждения" required><button class="dialog__resend" type="button" id="resend-code">Оправить новый код через <span class="dialog__resend-count"></span></button><button class="dialog__submit" type="button" id="next-step">Далее</button></form>
+        </div><button class="dialog__close" type="button" id="phone-dialog-close"></button>
+    </dialog>
+    <dialog class="dialog dialog--phone" id="phone-new-dialog">
+        <div class="dialog__content">
+            <h2 class="dialog__title">Введите новый номер телефона</h2>
+            <p class="dialog__description">Номер будет использоваться для защиты аккаунта.</p>
+            <form class="dialog__form" id="new-phone-form"><input class="dialog__input" type="tel" id="new-phone" placeholder="Новый номер телефона" required><button class="dialog__submit" type="button" id="send-new-code">Далее</button></form>
+        </div><button class="dialog__close" type="button" id="phone-new-dialog-close"></button>
+    </dialog>
+    <dialog class="dialog dialog--phone" id="phone-confirm-dialog">
+        <div class="dialog__content">
+            <h2 class="dialog__title">Введите код подтверждения</h2>
+            <p class="dialog__description">Пришлем код подтверждения на номер <span class="dialog__description-tel" id="new-phone-number">+7 123 456 78 90</span></p>
+            <form class="dialog__form dialog__form--tel" id="confirm-code-form"><input class="dialog__input" type="text" id="confirm-code" placeholder="Введите код подтверждения" required><button class="dialog__resend" type="button" id="resend-new-code">Оправить новый код через <span class="dialog__resend-count"> </span></button><button class="dialog__submit" type="button" id="send-new-phone">Отправить</button></form>
+        </div><button class="dialog__close" type="button" id="phone-code-dialog-close"></button>
+    </dialog>
+    <script src="static/js/libs.js"></script>
+    <script src="static/js/settings.js"></script>
+</body>
+
+</html>

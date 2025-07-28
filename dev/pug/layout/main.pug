@@ -160,15 +160,64 @@ html(lang="ru-RU")
                         p 3
 
                     //- забирать только этот таб/блок
-                    .project-description.analytics.tab-content.active
-                        .analytic
-                            .indicator-container
-                            .analytic-content
-                                .analytic-aside
-                                .analytic-data
-                        .analytic-controls
-                            button(type="button" disabled).analytic-controls__btn.js-prev
-                            button(type="button").analytic-controls__btn.js-next
+                    //- .project-description.analytics.tab-content.active
+                    //-     .analytic
+                    //-         .indicator-container
+                    //-         .analytic-content
+                    //-             .analytic-aside
+                    //-             .analytic-data
+                    //-     .analytic-controls
+                    //-         button(type="button" disabled).analytic-controls__btn.js-prev
+                    //-         button(type="button").analytic-controls__btn.js-next
+            //- //- Контейнер для слайдера и столбца индикаторов
+            //- .container
+            //-     //- Столбец индикаторов
+            //-     .indicators-column
+            //-         each indicator in indicators
+            //-             .indicator-row(data-indicator=indicator.id)
+            //-                 span.indicator-label= indicator.label
+            //-                 span.indicator-value= indicator.value
+
+            //-     //- Слайдер
+            //-     .slider.swiper-container
+            //-         .swiper-wrapper
+            //-             each month in months
+            //-                 .swiper-slide(data-month=month.id)
+            //-                     .swiper-slide__header
+            //-                         h3.swiper-slide__month= month.name
+            //-                         .swiper-slide__indicators
+            //-                             each indicator in month.indicators
+            //-                                 .indicator-row(data-indicator=indicator.id)
+            //-                                     span.indicator-label= indicator.label
+            //-                                     span.indicator-value= indicator.value
+            //-                 //- .swiper-slide__graph-container изначально отсутствует
+            .analytic
+                .indicator-container
+                    .indicator-container__segment.last Last
+                    .indicator-container__segment.now Current
+                    .indicator-container__segment.future Future
+                .analytic-content
+                    //- Столбец индикаторов
+                    .analytic-aside
+                        each group in data.groups
+                            div.analytic-aside__block
+                                b.analytic-aside__title= group.title
+                                each indicator in group.indicators
+                                    .analytic-aside__subtitle.indicator-row(data-indicator=indicator.id) 
+                                        span.analytic-aside__subtitle-text #{indicator.text}
+
+                    //- Слайдер
+                    .analytic-data.slider.swiper-container
+                        .swiper-wrapper
+                            each month in months
+                                .analytic-data__block.swiper-slide(data-month=month.id)
+                                    .analytic-data__month.swiper= month.name
+                                    each group in month.groups
+                                        .analytic-data__group
+                                            .start-item
+                                            .analytic-data__list
+                                                each indicator in group.indicators
+                                                    .analytic-data__item.indicator-row(data-indicator=indicator.id)= indicator.value
 
         script(src="static/js/libs.js")
         script(src="static/js/main.js")

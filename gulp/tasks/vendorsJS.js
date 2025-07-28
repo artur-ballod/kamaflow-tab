@@ -3,6 +3,7 @@ const concat = require('gulp-concat');
 
 const vendorsScripts = [
     'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/swiper/swiper-bundle.min.js',
 ];
 
 module.exports = function vendors(cb) {

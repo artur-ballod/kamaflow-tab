@@ -1,0 +1,57 @@
+.container {
+	width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .indicators-column {
+
+  }
+  
+  .indicators-column .indicator-row {
+
+  }
+  
+  .indicators-column .indicator-row:hover {
+    background: #eaeaea;
+  }
+  
+  .slider.swiper-container {
+	max-width: 800px;
+	overflow: hidden;
+    flex: 1;
+  }
+  
+  .swiper-slide {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .swiper-slide__indicators {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .indicator-row {
+
+  }
+  
+  .indicator-row:hover {
+
+  }
+  
+  .indicator-label {
+
+  }
+  
+  .indicator-value {
+  
+  }
+  
+  .graph-container {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+  }

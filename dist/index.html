@@ -151,15 +151,591 @@
                 <div class="project-description team tab-content">
                     <p>3</p>
                 </div>
-                <div class="project-description analytics tab-content active">
-                    <div class="analytic">
-                        <div class="indicator-container"></div>
-                        <div class="analytic-content">
-                            <div class="analytic-aside"></div>
-                            <div class="analytic-data"></div>
+            </div>
+        </div>
+        <div class="analytic">
+            <div class="indicator-container">
+                <div class="indicator-container__segment last">Last</div>
+                <div class="indicator-container__segment now">Current</div>
+                <div class="indicator-container__segment future">Future</div>
+            </div>
+            <div class="analytic-content">
+                <div class="analytic-aside">
+                    <div class="analytic-aside__block"><b class="analytic-aside__title">All metrics</b></div>
+                    <div class="analytic-aside__block"><b class="analytic-aside__title">Key metrics</b>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="1"> <span class="analytic-aside__subtitle-text">Кол-во New клиентов (шт.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="2"> <span class="analytic-aside__subtitle-text">Кол-во Return клиентов (шт.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="3"> <span class="analytic-aside__subtitle-text">Retention rate (%)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="4"> <span class="analytic-aside__subtitle-text">CPL (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="5"> <span class="analytic-aside__subtitle-text">CPP (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="6"> <span class="analytic-aside__subtitle-text">LTV (руб.)</span></div>
+                    </div>
+                    <div class="analytic-aside__block"><b class="analytic-aside__title">Lose</b>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="7"> <span class="analytic-aside__subtitle-text">CAPEX</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="8"> <span class="analytic-aside__subtitle-text">ФОТ Dev (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="9"> <span class="analytic-aside__subtitle-text">Лицензии на ПО (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="10"> <span class="analytic-aside__subtitle-text">OPEX</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="11"> <span class="analytic-aside__subtitle-text">ФОТ Bus (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="12"> <span class="analytic-aside__subtitle-text">Маркетинг (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="13"> <span class="analytic-aside__subtitle-text">Fix costs total</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="14"> <span class="analytic-aside__subtitle-text">Total (руб.)</span></div>
+                    </div>
+                    <div class="analytic-aside__block"><b class="analytic-aside__title">Pays</b>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="15"> <span class="analytic-aside__subtitle-text">Выручка (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="16"> <span class="analytic-aside__subtitle-text">Валовая прибыль (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="17"> <span class="analytic-aside__subtitle-text">Операционная прибыль (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="18"> <span class="analytic-aside__subtitle-text">Прибыль (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="19"> <span class="analytic-aside__subtitle-text">ROI (%)</span></div>
+                    </div>
+                    <div class="analytic-aside__block"><b class="analytic-aside__title">KPI</b>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="20"> <span class="analytic-aside__subtitle-text">GMV (руб.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="21"> <span class="analytic-aside__subtitle-text">Кол-во активных клиентов (шт.)</span></div>
+                        <div class="analytic-aside__subtitle indicator-row" data-indicator="22"> <span class="analytic-aside__subtitle-text">Team bonus (руб.)</span></div>
+                    </div>
+                </div>
+                <div class="analytic-data slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Январь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">5</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">0</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6">239</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">1 658 857</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">1 655 857</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 725 067</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">147 840</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">-2 061 017</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-93,31</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Февраль</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">7</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">4</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6">384</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">1 661 187</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">1 658 187</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 211 187</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">573 599</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">-1 637 589</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-83,68</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Март</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">14</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">13</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">2 175 067</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">2 172 067</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 725 067</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">1 644 058</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">-1 081 009</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-66,89</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20">2 365 497</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21">10+</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22">236 550</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Апрель</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">14</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">17</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">2 996 088</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">2 993 088</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 546 088</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">2 031 294 ₽</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">-1 514 794</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-58,87</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Май</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">19</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">27</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 156 963</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 153 963</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 706 963</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">3 209 622</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">-497 341</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-47,17</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Июнь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">28</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">42</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 441 223</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 438 223</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 991 223</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">4 919 030</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">927 807</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-31,89</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20">10 159 946</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21">40+</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22">1 015 995</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Июль</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">28</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">52</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 180 394</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 177 394</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 730 394</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">5 834 354</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">2 103 961</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-17,00</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Август</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">28</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">62</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 365 016</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 362 016</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 915 016</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">6 768 667</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">2 853 651</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">-3,48</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Сентябрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">72</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 490 671</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 487 671</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 040 671</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">7 721 246</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">3 680 575</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">9,22</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20">20 324 268</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21">70+</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22">2 032 427</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Октябрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">82</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 557 288</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 554 288</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 107 288</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">8 691 385</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">4 584 097</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">21,53</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Ноябрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">92</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 655 989</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 652 989</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 205 989</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">9 678 398</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">5 472 409</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">33,42</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide">
+                            <div class="analytic-data__month swiper">Декабрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2">103</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 756 311</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 753 311</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 306 311</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">10 681 618</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">6 375 306</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19">44,98</div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20">29 051 400</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21">100+</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22">2 905 140</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="analytic-controls"><button class="analytic-controls__btn js-prev" type="button" disabled></button><button class="analytic-controls__btn js-next" type="button"></button></div>
                 </div>
             </div>
         </div>
