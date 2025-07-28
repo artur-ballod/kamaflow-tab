@@ -186,7 +186,12 @@ var initialize = function initialize() {
     var groupIndex = 0; // Добавляем счетчик для групп
     data.groups.forEach(function (group) {
       var groupDiv = document.createElement('div');
-      groupDiv.classList.add('analytic-aside__block');
+      // Добавляем класс из свойства group.class
+      if (group["class"]) {
+        groupDiv.classList.add('analytic-aside__block', group["class"]);
+      } else {
+        groupDiv.classList.add('analytic-aside__block');
+      }
       var groupTitle = document.createElement('b');
       groupTitle.classList.add('analytic-aside__title');
       groupTitle.textContent = group.title;

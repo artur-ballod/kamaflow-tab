@@ -193,7 +193,13 @@ const initialize = () => {
     let groupIndex = 0; // Добавляем счетчик для групп
     data.groups.forEach(group => {
       const groupDiv = document.createElement('div');
-      groupDiv.classList.add('analytic-aside__block');
+      // Добавляем класс из свойства group.class
+      if (group.class) {
+        groupDiv.classList.add('analytic-aside__block', group.class);
+      } else {
+        groupDiv.classList.add('analytic-aside__block');
+      }
+
       const groupTitle = document.createElement('b');
       groupTitle.classList.add('analytic-aside__title');
       groupTitle.textContent = group.title;
