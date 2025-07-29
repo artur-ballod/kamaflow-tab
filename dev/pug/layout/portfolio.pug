@@ -1,0 +1,71 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="static/css/styles.css")
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+    body.body
+        main.main
+            .portfolio
+                h1.portfolio__title Инвестиционный портфель
+                span.portfolio__status В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.
+                //- 
+                article.portfolio__wrap
+                    //- 
+                    section.porfolio__item
+                        header.portfolio__header
+                            h2.portfolio__subtitle Уточните интересующие вас отрасли
+                            button(type="reset").portfolio__edit Сбросить
+                        .portfolio__body
+                            for industry in industries
+                                +checkbox(industry.name, industry.nr, 'portfolio__checkbox', 'portfolio__checkbox--industry')
+                    //- 
+                    section.porfolio__item
+                        header.portfolio__header
+                            h2.portfolio__subtitle Уточните интересующие вас параметры раунда и компании
+                            button(type="reset").portfolio__edit Сбросить
+                        .portfolio__body.portfolio__body--range
+                            each slider in sliders
+                                +range-slider(slider)
+                    //-
+                    section.porfolio__item
+                        header.portfolio__header
+                            h2.portfolio__subtitle Уведомления
+                            button(type="reset").portfolio__edit Сбросить
+                        .portfolio__body.portfolio__body--notify
+                            .portfolio__notify.notify
+                                ul.notify__head
+                                    li.notify__head-text Тип уведомлений
+                                    li.notify__head-text Email
+                                    li.notify__head-text SMS
+                                each notification in notifications
+                                    ul.notify__body
+                                        li.notify__item
+                                            span.notify__text= notification.title
+                                        each item in notification.items
+                                            li.notify__item
+                                                label.notify__label(for=`${notification.prefix}-${item.type}`)
+                                                input.notify__input(
+                                                    type="checkbox" 
+                                                    name=`${notification.prefix}-${item.type}` 
+                                                    id=`${notification.prefix}-${item.type}` 
+                                                    checked=item.checked
+                                                )
+
+        script(src="static/js/libs.js")
+        script(src="static/js/portfolio.js")
+        block script

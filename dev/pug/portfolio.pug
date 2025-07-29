@@ -1,0 +1,7 @@
+extends layout/portfolio
+
+block variables
+	- var title = "KAMAFLOW investment portfolio"
+	- var industries = [{ name: 'Технологии', nr: 15 },{ name: 'Финансы', nr: 23 },{ name: 'Здравоохранение', nr: 7 },{ name: 'Образование', nr: 12 },{ name: 'Недвижимость', nr: 9 }]
+	- var sliders = [{ id: 1, label: "Оценка pre-money", min: 0, max: 100, start1: 20, start2: 80 },{ id: 2, label: "Размер раунда", min: 50, max: 200, start1: 75, start2: 150 },{ id: 3, label: "Доступная аллокация", min: 100, max: 500, start1: 200, start2: 400 },{ id: 4, label: "Минимальное участие", min: 0, max: 1000, start1: 300, start2: 700 }]
+	- var notifications = [{title: "Анонсы новых проектов",prefix: "new-projects",items: [{ type: "email", checked: true },{ type: "sms", checked: false }]},{title: "События в моих проектах",prefix: "my-projects",items: [{ type: "email", checked: true },{ type: "sms", checked: false }]},{title: "Аналитические отчеты",prefix: "reports",items: [{ type: "email", checked: false },{ type: "sms", checked: true }]}]

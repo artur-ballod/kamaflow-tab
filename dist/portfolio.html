@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head><!--test ver only-->
+    <meta name="robots" content="noindex"><!--end of test ver only-->
+    <meta charset="utf-8">
+    <title>KAMAFLOW investment portfolio</title><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"><!--test ver only-->
+    <meta name="robots" content="noindex"><!--end of test ver only-->
+</head>
+
+<body class="body">
+    <main class="main">
+        <div class="portfolio">
+            <h1 class="portfolio__title">Инвестиционный портфель</h1><span class="portfolio__status">В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.</span>
+            <article class="portfolio__wrap">
+                <section class="porfolio__item">
+                    <header class="portfolio__header">
+                        <h2 class="portfolio__subtitle">Уточните интересующие вас отрасли</h2><button class="portfolio__edit" type="reset">Сбросить</button>
+                    </header>
+                    <div class="portfolio__body"><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Технологии</span><span class="number">15</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Финансы</span><span class="number">23</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Здравоохранение</span><span class="number">7</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Образование</span><span class="number">12</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Недвижимость</span><span class="number">9</span></label></div>
+                </section>
+                <section class="porfolio__item">
+                    <header class="portfolio__header">
+                        <h2 class="portfolio__subtitle">Уточните интересующие вас параметры раунда и компании</h2><button class="portfolio__edit" type="reset">Сбросить</button>
+                    </header>
+                    <div class="portfolio__body portfolio__body--range"><label class="portfolio__label">Оценка pre-money</label>
+                        <div class="portfolio__range" id="slider-1">
+                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-1-1">0</span> - <span class="portfolio__range-nr" id="value-1-2">0</span> млрд Руб</div>
+                        </div><label class="portfolio__label">Размер раунда</label>
+                        <div class="portfolio__range" id="slider-2">
+                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-2-1">0</span> - <span class="portfolio__range-nr" id="value-2-2">0</span> млрд Руб</div>
+                        </div><label class="portfolio__label">Доступная аллокация</label>
+                        <div class="portfolio__range" id="slider-3">
+                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-3-1">0</span> - <span class="portfolio__range-nr" id="value-3-2">0</span> млрд Руб</div>
+                        </div><label class="portfolio__label">Минимальное участие</label>
+                        <div class="portfolio__range" id="slider-4">
+                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-4-1">0</span> - <span class="portfolio__range-nr" id="value-4-2">0</span> млрд Руб</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="porfolio__item">
+                    <header class="portfolio__header">
+                        <h2 class="portfolio__subtitle">Уведомления</h2><button class="portfolio__edit" type="reset">Сбросить</button>
+                    </header>
+                    <div class="portfolio__body portfolio__body--notify">
+                        <div class="portfolio__notify notify">
+                            <ul class="notify__head">
+                                <li class="notify__head-text">Тип уведомлений</li>
+                                <li class="notify__head-text">Email</li>
+                                <li class="notify__head-text">SMS</li>
+                            </ul>
+                            <ul class="notify__body">
+                                <li class="notify__item"><span class="notify__text">Анонсы новых проектов</span></li>
+                                <li class="notify__item"><label class="notify__label" for="new-projects-email"></label><input class="notify__input" type="checkbox" name="new-projects-email" id="new-projects-email" checked></li>
+                                <li class="notify__item"><label class="notify__label" for="new-projects-sms"></label><input class="notify__input" type="checkbox" name="new-projects-sms" id="new-projects-sms"></li>
+                            </ul>
+                            <ul class="notify__body">
+                                <li class="notify__item"><span class="notify__text">События в моих проектах</span></li>
+                                <li class="notify__item"><label class="notify__label" for="my-projects-email"></label><input class="notify__input" type="checkbox" name="my-projects-email" id="my-projects-email" checked></li>
+                                <li class="notify__item"><label class="notify__label" for="my-projects-sms"></label><input class="notify__input" type="checkbox" name="my-projects-sms" id="my-projects-sms"></li>
+                            </ul>
+                            <ul class="notify__body">
+                                <li class="notify__item"><span class="notify__text">Аналитические отчеты</span></li>
+                                <li class="notify__item"><label class="notify__label" for="reports-email"></label><input class="notify__input" type="checkbox" name="reports-email" id="reports-email"></li>
+                                <li class="notify__item"><label class="notify__label" for="reports-sms"></label><input class="notify__input" type="checkbox" name="reports-sms" id="reports-sms" checked></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="static/js/libs.js"></script>
+    <script src="static/js/portfolio.js"></script>
+</body>
+
+</html>
