@@ -1,0 +1,141 @@
+.portfolio {
+	width: 100%;
+	@include flex-setting(column, flex-start, flex-start);
+	padding: toRem(40) toRem(12);
+
+	&__title {
+		@include font-setting($primary-font, toRem(40), 110%, 700, #000000);
+		text-align: left;
+		margin: 0;
+		margin-bottom: toRem(40);
+	}
+
+	&__status {
+		position: relative;
+		@include flex-setting(row, flex-start, center);
+		padding: toRem(7) toRem(7) toRem(7) toRem(35);
+		border: toRem(1) solid #FFC7B5;
+		border-radius: toRem(12);
+		background-color: #FFE9E2;
+		margin-bottom: toRem(12);
+		@include font-setting($primary-font, toRem(14), 129%, 400, #e0592e);
+		text-align: left;
+
+		display: none;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: toRem(20);
+			height: toRem(20);
+			left: toRem(8);
+			top: toRem(8);
+			background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2001_1754)'%3E%3Cpath d='M9.16675 12.4993H10.8334V14.166H9.16675V12.4993ZM9.16675 5.83268H10.8334V10.8327H9.16675V5.83268ZM9.99175 1.66602C5.39175 1.66602 1.66675 5.39935 1.66675 9.99935C1.66675 14.5993 5.39175 18.3327 9.99175 18.3327C14.6001 18.3327 18.3334 14.5993 18.3334 9.99935C18.3334 5.39935 14.6001 1.66602 9.99175 1.66602ZM10.0001 16.666C6.31675 16.666 3.33341 13.6827 3.33341 9.99935C3.33341 6.31602 6.31675 3.33268 10.0001 3.33268C13.6834 3.33268 16.6667 6.31602 16.6667 9.99935C16.6667 13.6827 13.6834 16.666 10.0001 16.666Z' fill='%23E0592E'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2001_1754'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	&__wrap {
+		width: 100%;
+		@include flex-setting(column, flex-start, center);
+		gap: toRem(12);
+	}
+
+	&__item {
+		width: 100%;
+		@include flex-setting(column, flex-start, center);
+		border: toRem(1) solid #E8E8E8;
+		border-radius: toRem(12);
+		background-color: #FAFAFA;
+
+		&--notify {
+			background-color: #F4FAFE;
+			border-color: #CCE8F6;
+		}
+	}
+
+	&__header {
+		width: 100%;
+		@include flex-setting(column, flex-start, flex-start);
+		gap: toRem(12);
+		padding: toRem(23) toRem(23);
+		border-bottom: toRem(1) solid #E8E8E8;
+	}
+
+	&__subtitle {
+		@include font-setting($primary-font, toRem(22), 118%, 600, #000000);
+		text-align: left;
+		margin: 0;
+	}
+
+	&__edit {
+		background-color: transparent;
+		padding: 0;
+		border: none;
+		@include font-setting($primary-font, toRem(16), 137%, 400, #000000);
+		transition: 0.2s $cubic;
+
+		&:active {
+			opacity: 0.5;
+			transition: 0.2s $cubic;
+		}
+	}
+
+	&__body {
+		width: 100%;;
+		padding: toRem(23) toRem(23);
+		@include flex-setting(row, flex-start, center);
+		gap: toRem(8) toRem(8);
+		flex-wrap: wrap;
+	}
+	
+	&__input {
+		display: none;
+	}
+
+	&__input:checked + label {
+		background-color: #34A3DC;
+		border-color: #34A3DC;
+		transition: 0.2s $cubic;
+
+		.portfolio__label-text {
+			color: #FFFFFF;
+			transition: 0.2s $cubic;
+		}
+
+		.portfolio__label-number {
+			background-color: #FFFFFF;
+			color: #34A3DC;
+			transition: 0.2s $cubic;
+		}
+	}
+
+	&__label {
+		position: relative;
+		@include flex-setting(row, flex-start, center);
+		gap: toRem(6);
+		width: auto;
+		padding: toRem(7) toRem(11);
+		border: toRem(1) solid #F0F0F0;
+		background-color: #FFFFFF;
+		border-radius: toRem(12);
+		transition: 0.2s $cubic;
+
+		&-text {
+			@include font-setting($primary-font, toRem(16), 137%, 600, #000000);
+			transition: 0.2s $cubic;
+		}
+
+		&-number {
+			@include flex-setting(column, center, center);
+			width: auto;
+			padding: toRem(2) toRem(4);
+			background-color: #CCE8F6;
+			border-radius: toRem(8);
+			@include font-setting($primary-font, toRem(14), 129%, 600, #34a3dc);
+			transition: 0.2s $cubic;
+		}
+	}
+}

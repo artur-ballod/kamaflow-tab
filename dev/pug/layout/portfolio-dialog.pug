@@ -1,0 +1,54 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="static/css/styles.css")
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+    body.body
+        main.main
+        dialog.dialog#wizard
+            span.dialog__step Шаг&nbsp;
+                span#currentStep 1
+            
+            .dialog__content
+                form(method="" action="").dialog__form
+                    //- Шаг диалога 1
+                    .dialog__content-step(data-step="1")
+                        h2.dialog__title Заполните инвестиционный профиль
+                        .dialog__list
+                            input(type="text" name="name-wizard" placeholder="ФИО").dialog__input
+                            input(type="tel" name="phone-wizard" placeholder="Телефон").dialog__input
+                        button.dialog__submit.js-next-btn(type="button") Далее
+                    //- Шаг диалога 2
+                    .dialog__content-step(data-step="2")
+                        h2.dialog__title Уточните интересующие вас параметры раунда и компании
+                        .dialog__range.range
+                            each slider in sliders
+                                +range-slider(slider)
+                        button.dialog__submit.js-next-btn(type="button") Далее
+                    //- Шаг диалога 3
+                    .dialog__content-step(data-step="3")
+                        h2.dialog__title Уточните интересующие вас отрасли
+                        .dialog__list.dialog__list--checkbox
+                            for industry in industries
+                                +checkbox(industry.name, industry.nr, 'portfolio__label', industry.type)
+                        span.dialog__status.portfolio__status В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.
+                        button.dialog__submit.dialog__submit--final.js-save-btn(type="button") Сохранить и завершить
+            button.dialog__close(type="button")
+        script(src="static/js/libs.js")
+        script(src="static/js/portfolio-dialog.js")
+        block script

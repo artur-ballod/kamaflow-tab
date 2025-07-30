@@ -26,23 +26,24 @@ html(lang="ru-RU")
                 //- 
                 article.portfolio__wrap
                     //- 
-                    section.porfolio__item
+                    section.portfolio__item
                         header.portfolio__header
                             h2.portfolio__subtitle Уточните интересующие вас отрасли
                             button(type="reset").portfolio__edit Сбросить
                         .portfolio__body
                             for industry in industries
-                                +checkbox(industry.name, industry.nr, 'portfolio__checkbox', 'portfolio__checkbox--industry')
+                                +checkbox(industry.name, industry.nr, 'portfolio__label', industry.type)
                     //- 
-                    section.porfolio__item
+                    section.portfolio__item
                         header.portfolio__header
                             h2.portfolio__subtitle Уточните интересующие вас параметры раунда и компании
                             button(type="reset").portfolio__edit Сбросить
                         .portfolio__body.portfolio__body--range
-                            each slider in sliders
-                                +range-slider(slider)
+                            .portfolio__range.range
+                                each slider in sliders
+                                    +range-slider(slider)
                     //-
-                    section.porfolio__item
+                    section.portfolio__item.portfolio__item--notify
                         header.portfolio__header
                             h2.portfolio__subtitle Уведомления
                             button(type="reset").portfolio__edit Сбросить
@@ -58,13 +59,13 @@ html(lang="ru-RU")
                                             span.notify__text= notification.title
                                         each item in notification.items
                                             li.notify__item
-                                                label.notify__label(for=`${notification.prefix}-${item.type}`)
                                                 input.notify__input(
                                                     type="checkbox" 
                                                     name=`${notification.prefix}-${item.type}` 
                                                     id=`${notification.prefix}-${item.type}` 
                                                     checked=item.checked
                                                 )
+                                                label.notify__label(for=`${notification.prefix}-${item.type}`)
 
         script(src="static/js/libs.js")
         script(src="static/js/portfolio.js")

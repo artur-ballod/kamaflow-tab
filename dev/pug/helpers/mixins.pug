@@ -11,17 +11,18 @@ mixin setting(type, label, placeholder, name, info)
 					button(type="button") Отправить 
 					| сообщение на почту еще один раз.
 
-mixin checkbox(text, number, className, additionalClass)
-	label(class=className + ' ' + additionalClass)
-		input(type="checkbox")
-		span.text #{text}
-		span.number #{number}
+mixin checkbox(text, number, className, type)
+	input.portfolio__input(type="checkbox" name=type id=type )
+	label(class=className + ' ' for=type) 
+		span(class=className +'-text') #{text}
+		span(class=className +'-number') #{number}
 
 mixin range-slider(slider)
-	label.portfolio__label= slider.label
-	.portfolio__range(id=`slider-${slider.id}`)
-		.portfolio__range-values
-			span.portfolio__range-nr(id=`value-${slider.id}-1`) 0
-			|  - 
-			span.portfolio__range-nr(id=`value-${slider.id}-2`) 0
-			|  млрд Руб
+	.range__item
+		span.range__label= slider.label
+		.range__input(id=`slider-${slider.id}`)
+		.range__values
+			span.range__values-nr(id=`value-${slider.id}-1`) 0
+			|  &nbsp;-&nbsp; 
+			span.range__values-nr(id=`value-${slider.id}-2`) 0
+			|  млрд Р

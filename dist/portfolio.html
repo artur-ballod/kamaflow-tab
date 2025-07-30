@@ -16,32 +16,38 @@
         <div class="portfolio">
             <h1 class="portfolio__title">Инвестиционный портфель</h1><span class="portfolio__status">В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.</span>
             <article class="portfolio__wrap">
-                <section class="porfolio__item">
+                <section class="portfolio__item">
                     <header class="portfolio__header">
                         <h2 class="portfolio__subtitle">Уточните интересующие вас отрасли</h2><button class="portfolio__edit" type="reset">Сбросить</button>
                     </header>
-                    <div class="portfolio__body"><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Технологии</span><span class="number">15</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Финансы</span><span class="number">23</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Здравоохранение</span><span class="number">7</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Образование</span><span class="number">12</span></label><label class="portfolio__checkbox portfolio__checkbox--industry"><input type="checkbox" /><span class="text">Недвижимость</span><span class="number">9</span></label></div>
+                    <div class="portfolio__body"><input class="portfolio__input" type="checkbox" name="tech" id="tech" /><label class="portfolio__label " for="tech"> <span class="portfolio__label-text">Технологии</span><span class="portfolio__label-number">15</span></label><input class="portfolio__input" type="checkbox" name="fin" id="fin" /><label class="portfolio__label " for="fin"> <span class="portfolio__label-text">Финансы</span><span class="portfolio__label-number">23</span></label><input class="portfolio__input" type="checkbox" name="hea" id="hea" /><label class="portfolio__label " for="hea"> <span class="portfolio__label-text">Здравоохранение</span><span class="portfolio__label-number">7</span></label><input class="portfolio__input" type="checkbox" name="edu" id="edu" /><label class="portfolio__label " for="edu"> <span class="portfolio__label-text">Образование</span><span class="portfolio__label-number">12</span></label><input class="portfolio__input" type="checkbox" name="est" id="est" /><label class="portfolio__label " for="est"> <span class="portfolio__label-text">Недвижимость</span><span class="portfolio__label-number">9</span></label></div>
                 </section>
-                <section class="porfolio__item">
+                <section class="portfolio__item">
                     <header class="portfolio__header">
                         <h2 class="portfolio__subtitle">Уточните интересующие вас параметры раунда и компании</h2><button class="portfolio__edit" type="reset">Сбросить</button>
                     </header>
-                    <div class="portfolio__body portfolio__body--range"><label class="portfolio__label">Оценка pre-money</label>
-                        <div class="portfolio__range" id="slider-1">
-                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-1-1">0</span> - <span class="portfolio__range-nr" id="value-1-2">0</span> млрд Руб</div>
-                        </div><label class="portfolio__label">Размер раунда</label>
-                        <div class="portfolio__range" id="slider-2">
-                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-2-1">0</span> - <span class="portfolio__range-nr" id="value-2-2">0</span> млрд Руб</div>
-                        </div><label class="portfolio__label">Доступная аллокация</label>
-                        <div class="portfolio__range" id="slider-3">
-                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-3-1">0</span> - <span class="portfolio__range-nr" id="value-3-2">0</span> млрд Руб</div>
-                        </div><label class="portfolio__label">Минимальное участие</label>
-                        <div class="portfolio__range" id="slider-4">
-                            <div class="portfolio__range-values"><span class="portfolio__range-nr" id="value-4-1">0</span> - <span class="portfolio__range-nr" id="value-4-2">0</span> млрд Руб</div>
+                    <div class="portfolio__body portfolio__body--range">
+                        <div class="portfolio__range range">
+                            <div class="range__item"><span class="range__label">Оценка pre-money</span>
+                                <div class="range__input" id="slider-1"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-1-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-1-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Размер раунда</span>
+                                <div class="range__input" id="slider-2"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-2-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-2-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Доступная аллокация</span>
+                                <div class="range__input" id="slider-3"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-3-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-3-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Минимальное участие</span>
+                                <div class="range__input" id="slider-4"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-4-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-4-2">0</span> млрд Р</div>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section class="porfolio__item">
+                <section class="portfolio__item portfolio__item--notify">
                     <header class="portfolio__header">
                         <h2 class="portfolio__subtitle">Уведомления</h2><button class="portfolio__edit" type="reset">Сбросить</button>
                     </header>
@@ -54,18 +60,18 @@
                             </ul>
                             <ul class="notify__body">
                                 <li class="notify__item"><span class="notify__text">Анонсы новых проектов</span></li>
-                                <li class="notify__item"><label class="notify__label" for="new-projects-email"></label><input class="notify__input" type="checkbox" name="new-projects-email" id="new-projects-email" checked></li>
-                                <li class="notify__item"><label class="notify__label" for="new-projects-sms"></label><input class="notify__input" type="checkbox" name="new-projects-sms" id="new-projects-sms"></li>
+                                <li class="notify__item"><input class="notify__input" type="checkbox" name="new-projects-email" id="new-projects-email" checked><label class="notify__label" for="new-projects-email"></label></li>
+                                <li class="notify__item"><input class="notify__input" type="checkbox" name="new-projects-sms" id="new-projects-sms"><label class="notify__label" for="new-projects-sms"></label></li>
                             </ul>
                             <ul class="notify__body">
                                 <li class="notify__item"><span class="notify__text">События в моих проектах</span></li>
-                                <li class="notify__item"><label class="notify__label" for="my-projects-email"></label><input class="notify__input" type="checkbox" name="my-projects-email" id="my-projects-email" checked></li>
-                                <li class="notify__item"><label class="notify__label" for="my-projects-sms"></label><input class="notify__input" type="checkbox" name="my-projects-sms" id="my-projects-sms"></li>
+                                <li class="notify__item"><input class="notify__input" type="checkbox" name="my-projects-email" id="my-projects-email" checked><label class="notify__label" for="my-projects-email"></label></li>
+                                <li class="notify__item"><input class="notify__input" type="checkbox" name="my-projects-sms" id="my-projects-sms"><label class="notify__label" for="my-projects-sms"></label></li>
                             </ul>
                             <ul class="notify__body">
                                 <li class="notify__item"><span class="notify__text">Аналитические отчеты</span></li>
-                                <li class="notify__item"><label class="notify__label" for="reports-email"></label><input class="notify__input" type="checkbox" name="reports-email" id="reports-email"></li>
-                                <li class="notify__item"><label class="notify__label" for="reports-sms"></label><input class="notify__input" type="checkbox" name="reports-sms" id="reports-sms" checked></li>
+                                <li class="notify__item"><input class="notify__input" type="checkbox" name="reports-email" id="reports-email"><label class="notify__label" for="reports-email"></label></li>
+                                <li class="notify__item"><input class="notify__input" type="checkbox" name="reports-sms" id="reports-sms" checked><label class="notify__label" for="reports-sms"></label></li>
                             </ul>
                         </div>
                     </div>

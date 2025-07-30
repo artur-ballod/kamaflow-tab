@@ -1,0 +1,58 @@
+.range {
+	width: 100%;
+	@include flex-setting(column, flex-start, center);
+
+
+	&__item {
+		width: 100%;
+		@include flex-setting(column, flex-start, flex-start);
+		gap: toRem(12);
+	}
+
+	&__label {
+		@include font-setting($primary-font, toRem(16), 156%, 400, #969696);
+		text-align: left;
+		margin: 0;
+	}
+
+	&__input {
+		width: 100%;
+
+		&.noUi-target {
+			height: toRem(8);
+			background-color: #DDDDDD;
+			border: none;
+		}
+
+		.noUi-handle {
+			width: toRem(16);
+			height: toRem(16);
+			background-color: #34A3DC;
+			border: none;
+			border-radius: 50%;
+			box-shadow: none;
+			outline: none;
+			right: toRem(-8);
+			top: toRem(-4);
+
+			&::after,
+			&::before {
+				display: none;
+			}
+		}
+
+		.noUi-connect {
+			background-color: #34A3DC;
+			border-radius: toRem(8);
+		}
+	}
+
+	&__values {
+		align-self: flex-end;
+		@include flex-setting(row, flex-end, center);
+
+		&-nr {
+			@include font-setting($primary-font, toRem(16), 156%, 400, #000000);
+		}
+	}
+}

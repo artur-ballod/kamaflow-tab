@@ -1,0 +1,70 @@
+.notify {
+	width: 100%;
+	@include flex-setting(column, flex-start, flex-start);
+	gap: toRem(22);
+
+	&__head {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr toRem(41) toRem(33);
+		align-items: center;
+		column-gap: toRem(20);
+
+		&-text {
+			@include font-setting($primary-font, toRem(16), 156%, 400, #969696);
+		}
+	}
+
+	&__body {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr toRem(41) toRem(33);
+		align-items: center;
+		column-gap: toRem(20);
+	}
+
+	&__item:not(:first-child) {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__text {
+		@include font-setting($primary-font, toRem(14), 129%, 400, #000000);
+	}
+
+	&__input {
+		display: none;
+	}
+
+	&__label {
+		position: relative;
+		display: inline-flex;
+		width: toRem(24);
+		height: toRem(24);
+		background-color: #ffffff;
+		border: 1px solid #C8C8C8;
+		border-radius: toRem(6);
+		transition: 0.2s $cubic;
+	}
+
+	&__input:checked + label {
+		background-color: #34A3DC;
+		border-color: #34A3DC;
+		transition: 0.2s $cubic;
+	}
+
+	&__input:checked + label::after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: toRem(24);
+		height: toRem(24);
+		background-image: url("data:image/svg+xml,%3Csvg width='15' height='12' viewBox='0 0 15 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99989 9.47487L1.52489 5.99987L0.341553 7.17487L4.99989 11.8332L14.9999 1.8332L13.8249 0.658203L4.99989 9.47487Z' fill='white'/%3E%3C/svg%3E%0A");
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: toRem(15) toRem(12);
+		transition: 0.2s $cubic;
+	}	
+}
