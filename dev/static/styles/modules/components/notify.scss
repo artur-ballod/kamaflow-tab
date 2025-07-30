@@ -68,3 +68,29 @@
 		transition: 0.2s $cubic;
 	}	
 }
+
+@include min-screen(1440px) {
+	.notify {
+		max-width: toRem(466);
+
+		&__head {
+			column-gap: toRem(40);
+
+			&-text {
+				font-size: toRem(16);
+			}
+		}
+
+		&__body {
+			column-gap: toRem(40);
+		}
+
+		&__text {
+			font-size: toRem(16);
+		}
+
+		&__label {
+			cursor: pointer;
+		}
+	}
+}

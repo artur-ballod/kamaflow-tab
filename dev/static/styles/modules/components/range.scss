@@ -56,3 +56,16 @@
 		}
 	}
 }
+
+@include min-screen(768px) {
+	.range {
+		flex-direction: row;
+		gap: toRem(32);
+
+		&__input {
+			.noUi-handle {
+				cursor: pointer;
+			}
+		}
+	}
+}

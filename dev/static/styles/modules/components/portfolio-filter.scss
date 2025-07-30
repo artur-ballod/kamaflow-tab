@@ -1,0 +1,63 @@
+.portfolio-filter {
+	width: 100%;
+	@include flex-setting(column, flex-start, center);
+
+	&__wrap {
+		width: 100%;
+		@include flex-setting(column, flex-start, center);
+		gap: toRem(32);
+	}
+
+	&__item {
+		width: 100%;
+	}
+
+	&__body {
+		width: 100%;
+		@include flex-setting(row, flex-start, center);
+		gap: toRem(8) toRem(8);
+		flex-wrap: wrap;
+	}
+
+	&__reset {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		@include font-setting($primary-font, toRem(16), 150%, 400, #000);
+
+		&:active {
+			opacity: 0.5;
+			transition: 0.2s $cubic;
+		}
+	}
+}
+
+@include min-screen(1440px) {
+	.portfolio-filter {
+		max-width: toRem(1336);
+
+		&__wrap {
+			align-items: flex-start;
+			gap: toRem(60);
+		}
+
+		&__item {
+			width: 100%;
+		}
+
+		&__body {
+			width: 100%;
+			@include flex-setting(row, flex-start, center);
+			gap: toRem(8) toRem(8);
+			flex-wrap: wrap;
+		}
+
+		&__reset {
+			cursor: pointer;
+			&:hover {
+				opacity: 0.5;
+				transition: 0.2s $cubic;
+			}
+		}
+	}
+}

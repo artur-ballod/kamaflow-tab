@@ -64,3 +64,11 @@ createRangeSlider(1, 0, 100, 20, 80);
 createRangeSlider(2, 50, 200, 75, 150);
 createRangeSlider(3, 100, 500, 200, 400);
 createRangeSlider(4, 0, 1000, 300, 700);
+var diaOpener = document.querySelector('.js-open-modal');
+var wizardDialog = document.getElementById('wizard');
+diaOpener.addEventListener('click', function () {
+  showDialog(wizardDialog);
+});
+function showDialog(dialog) {
+  dialog.showModal();
+}

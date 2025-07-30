@@ -136,6 +136,68 @@
 			border-radius: toRem(8);
 			@include font-setting($primary-font, toRem(14), 129%, 600, #34a3dc);
 			transition: 0.2s $cubic;
+			min-width: toRem(22);
+		}
+	}
+}
+
+@include min-screen(768px) {
+	.portfolio {
+		padding: toRem(36) toRem(52);
+
+		&__status {
+			margin-bottom: toRem(32);
+		}
+
+		&__wrap {
+			gap: toRem(32);
+		}
+
+		&__header {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__edit {
+			&:hover {
+				opacity: 0.5;
+				transition: 0.2s $cubic;
+			}
+		}
+		
+		&__label {
+			cursor: pointer;
+			&:hover {
+				border-color: #34A3DC;
+				transition: 0.2s $cubic;
+			}
+		}
+	}
+}
+
+@include min-screen(1440px) {
+	.portfolio {
+		padding-left: calc((100% - 1336px) / 2);
+		padding-right: calc((100% - 1336px) / 2);
+
+		&__wrap {
+			max-width: toRem(1108);
+		}
+
+		&__edit {
+			&:hover {
+				opacity: 0.5;
+				transition: 0.2s $cubic;
+			}
+		}
+		
+		&__label {
+			cursor: pointer;
+			&:hover {
+				border-color: #34A3DC;
+				transition: 0.2s $cubic;
+			}
 		}
 	}
 }

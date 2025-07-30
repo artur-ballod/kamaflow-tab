@@ -107,3 +107,27 @@
 		display: none;
 	}
 }
+
+@include min-screen(768px) {
+	.settings {
+		padding: toRem(36) calc((100% - 540px) / 2);
+	}
+}
+
+@include min-screen(1000px) {
+	.settings {
+		padding-left: toRem(52);
+		padding-right: toRem(52);
+	}
+}
+
+@include min-screen(1440px) {
+	.settings {
+		padding-left: calc((100% - 1336px) / 2);
+		padding-right: calc((100% - 1336px) / 2);
+
+		&__list {
+			max-width: toRem(540);
+		}
+	}
+}

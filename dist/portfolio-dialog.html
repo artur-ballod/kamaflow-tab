@@ -12,40 +12,42 @@
 </head>
 
 <body class="body">
-    <main class="main"></main>
-    <dialog class="dialog" id="wizard"><span class="dialog__step">Шаг&nbsp;<span id="currentStep">1</span></span>
-        <div class="dialog__content">
-            <form class="dialog__form" method="" action="">
-                <div class="dialog__content-step" data-step="1">
-                    <h2 class="dialog__title">Заполните инвестиционный профиль</h2>
-                    <div class="dialog__list"><input class="dialog__input" type="text" name="name-wizard" placeholder="ФИО"><input class="dialog__input" type="tel" name="phone-wizard" placeholder="Телефон"></div><button class="dialog__submit js-next-btn" type="button">Далее</button>
-                </div>
-                <div class="dialog__content-step" data-step="2">
-                    <h2 class="dialog__title">Уточните интересующие вас параметры раунда и компании</h2>
-                    <div class="dialog__range range">
-                        <div class="range__item"><span class="range__label">Оценка pre-money</span>
-                            <div class="range__input" id="slider-1"></div>
-                            <div class="range__values"><span class="range__values-nr" id="value-1-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-1-2">0</span> млрд Р</div>
-                        </div>
-                        <div class="range__item"><span class="range__label">Размер раунда</span>
-                            <div class="range__input" id="slider-2"></div>
-                            <div class="range__values"><span class="range__values-nr" id="value-2-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-2-2">0</span> млрд Р</div>
-                        </div>
-                        <div class="range__item"><span class="range__label">Доступная аллокация</span>
-                            <div class="range__input" id="slider-3"></div>
-                            <div class="range__values"><span class="range__values-nr" id="value-3-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-3-2">0</span> млрд Р</div>
-                        </div>
-                        <div class="range__item"><span class="range__label">Минимальное участие</span>
-                            <div class="range__input" id="slider-4"></div>
-                            <div class="range__values"><span class="range__values-nr" id="value-4-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-4-2">0</span> млрд Р</div>
-                        </div>
-                    </div><button class="dialog__submit js-next-btn" type="button">Далее</button>
-                </div>
-                <div class="dialog__content-step" data-step="3">
-                    <h2 class="dialog__title">Уточните интересующие вас отрасли</h2>
-                    <div class="dialog__list dialog__list--checkbox"><input class="portfolio__input" type="checkbox" name="tech" id="tech" /><label class="portfolio__label " for="tech"> <span class="portfolio__label-text">Технологии</span><span class="portfolio__label-number">15</span></label><input class="portfolio__input" type="checkbox" name="fin" id="fin" /><label class="portfolio__label " for="fin"> <span class="portfolio__label-text">Финансы</span><span class="portfolio__label-number">23</span></label><input class="portfolio__input" type="checkbox" name="hea" id="hea" /><label class="portfolio__label " for="hea"> <span class="portfolio__label-text">Здравоохранение</span><span class="portfolio__label-number">7</span></label><input class="portfolio__input" type="checkbox" name="edu" id="edu" /><label class="portfolio__label " for="edu"> <span class="portfolio__label-text">Образование</span><span class="portfolio__label-number">12</span></label><input class="portfolio__input" type="checkbox" name="est" id="est" /><label class="portfolio__label " for="est"> <span class="portfolio__label-text">Недвижимость</span><span class="portfolio__label-number">9</span></label></div><span class="dialog__status portfolio__status">В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.</span><button class="dialog__submit dialog__submit--final js-save-btn" type="button">Сохранить и завершить</button>
-                </div>
-            </form>
+    <main class="main"></main><button class="js-open-modal" type="button">ОТКРЫТЬ НАСТРОЙКИ</button>
+    <dialog class="dialog dialog--wizard" id="wizard">
+        <div class="dialog__wrap"><span class="dialog__step">Шаг&nbsp;<span id="currentStep">1</span></span>
+            <div class="dialog__content">
+                <form class="dialog__form" method="" action="">
+                    <div class="dialog__content-step" data-step="1">
+                        <h2 class="dialog__title">Заполните инвестиционный профиль</h2>
+                        <div class="dialog__list"><input class="dialog__input" type="text" name="name-wizard" placeholder="ФИО"><input class="dialog__input" type="tel" name="phone-wizard" placeholder="Телефон"></div><button class="dialog__submit js-next-btn" type="button">Далее</button>
+                    </div>
+                    <div class="dialog__content-step" data-step="2">
+                        <h2 class="dialog__title">Уточните интересующие вас параметры раунда и компании</h2>
+                        <div class="dialog__range range">
+                            <div class="range__item"><span class="range__label">Оценка pre-money</span>
+                                <div class="range__input" id="slider-1"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-1-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-1-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Размер раунда</span>
+                                <div class="range__input" id="slider-2"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-2-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-2-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Доступная аллокация</span>
+                                <div class="range__input" id="slider-3"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-3-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-3-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Минимальное участие</span>
+                                <div class="range__input" id="slider-4"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-4-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-4-2">0</span> млрд Р</div>
+                            </div>
+                        </div><button class="dialog__submit js-next-btn" type="button">Далее</button>
+                    </div>
+                    <div class="dialog__content-step" data-step="3">
+                        <h2 class="dialog__title">Уточните интересующие вас отрасли</h2>
+                        <div class="dialog__list dialog__list--checkbox"><input class="portfolio__input" type="checkbox" name="tech" id="tech" /><label class="portfolio__label " for="tech"> <span class="portfolio__label-text">Технологии</span><span class="portfolio__label-number">15</span></label><input class="portfolio__input" type="checkbox" name="fin" id="fin" /><label class="portfolio__label " for="fin"> <span class="portfolio__label-text">Финансы</span><span class="portfolio__label-number">23</span></label><input class="portfolio__input" type="checkbox" name="hea" id="hea" /><label class="portfolio__label " for="hea"> <span class="portfolio__label-text">Здравоохранение</span><span class="portfolio__label-number">7</span></label><input class="portfolio__input" type="checkbox" name="edu" id="edu" /><label class="portfolio__label " for="edu"> <span class="portfolio__label-text">Образование</span><span class="portfolio__label-number">12</span></label><input class="portfolio__input" type="checkbox" name="est" id="est" /><label class="portfolio__label " for="est"> <span class="portfolio__label-text">Недвижимость</span><span class="portfolio__label-number">9</span></label><input class="portfolio__input" type="checkbox" name="tech" id="tech" /><label class="portfolio__label " for="tech"> <span class="portfolio__label-text">Технологии</span><span class="portfolio__label-number">15</span></label><input class="portfolio__input" type="checkbox" name="fin" id="fin" /><label class="portfolio__label " for="fin"> <span class="portfolio__label-text">Финансы</span><span class="portfolio__label-number">23</span></label><input class="portfolio__input" type="checkbox" name="hea" id="hea" /><label class="portfolio__label " for="hea"> <span class="portfolio__label-text">Здравоохранение</span><span class="portfolio__label-number">7</span></label><input class="portfolio__input" type="checkbox" name="edu" id="edu" /><label class="portfolio__label " for="edu"> <span class="portfolio__label-text">Образование</span><span class="portfolio__label-number">12</span></label><input class="portfolio__input" type="checkbox" name="est" id="est" /><label class="portfolio__label " for="est"> <span class="portfolio__label-text">Недвижимость</span><span class="portfolio__label-number">9</span></label><input class="portfolio__input" type="checkbox" name="tech" id="tech" /><label class="portfolio__label " for="tech"> <span class="portfolio__label-text">Технологии</span><span class="portfolio__label-number">15</span></label><input class="portfolio__input" type="checkbox" name="fin" id="fin" /><label class="portfolio__label " for="fin"> <span class="portfolio__label-text">Финансы</span><span class="portfolio__label-number">23</span></label><input class="portfolio__input" type="checkbox" name="hea" id="hea" /><label class="portfolio__label " for="hea"> <span class="portfolio__label-text">Здравоохранение</span><span class="portfolio__label-number">7</span></label><input class="portfolio__input" type="checkbox" name="edu" id="edu" /><label class="portfolio__label " for="edu"> <span class="portfolio__label-text">Образование</span><span class="portfolio__label-number">12</span></label><input class="portfolio__input" type="checkbox" name="est" id="est" /><label class="portfolio__label " for="est"> <span class="portfolio__label-text">Недвижимость</span><span class="portfolio__label-number">9</span></label></div><span class="dialog__status portfolio__status">В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.</span><button class="dialog__submit dialog__submit--final js-save-btn" type="button">Сохранить и завершить</button>
+                    </div>
+                </form>
+            </div>
         </div><button class="dialog__close" type="button"></button>
     </dialog>
     <script src="static/js/libs.js"></script>
