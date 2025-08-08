@@ -139,6 +139,18 @@
 			min-width: toRem(22);
 		}
 	}
+
+	&__submit {
+		width: 100%;
+		@include flex-setting(center, center, center);
+		@include font-setting($primary-font, toRem(16), 137%, 700, #969696);
+		background-color: #f0f0f0;
+		border: none;
+		border-radius: toRem(12);
+		padding: toRem(12) 0;
+		margin-bottom: 0;
+		margin-top: auto;
+	}
 }
 
 @include min-screen(768px) {

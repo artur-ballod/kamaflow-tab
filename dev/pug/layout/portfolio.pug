@@ -21,7 +21,7 @@ html(lang="ru-RU")
     body.body
         main.main
             .portfolio
-                h1.portfolio__title Инвестиционный портфель
+                h1.portfolio__title Инвестиционный профиль
                 span.portfolio__status В настоящий момент нет проектов по заданным критериям. Рекомендуем расширить диапазон.
                 //- 
                 article.portfolio__wrap
@@ -66,6 +66,7 @@ html(lang="ru-RU")
                                                     checked=item.checked
                                                 )
                                                 label.notify__label(for=`${notification.prefix}-${item.type}`)
+                    button(type="submit").portfolio__submit Сохранить
 
         script(src="static/js/libs.js")
         script(src="static/js/portfolio.js")

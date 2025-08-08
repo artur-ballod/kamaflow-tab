@@ -650,6 +650,84 @@ function setCurrentSlide() {
             indicator.style.width = `${width}%`;
         }
     }
+
+    function calculateAndRenderDifference(swiperInstance) {
+        const currentSlide = swiperInstance.slides[swiperInstance.realIndex];
+        const previousSlide = swiperInstance.slides[swiperInstance.realIndex - 1];
+
+        if (!previousSlide) {
+            // Если нет предыдущего слайда, ничего не делаем
+            return;
+        }
+
+        const currentIndicators = currentSlide.querySelectorAll('.indicator-row');
+        const previousIndicators = previousSlide.querySelectorAll('.indicator-row');
+
+        currentIndicators.forEach(currentIndicator => {
+            const dataIndicator = currentIndicator.getAttribute('data-indicator');
+            const previousIndicator = previousSlide.querySelector(`.indicator-row[data-indicator="${dataIndicator}"]`);
+
+            if (previousIndicator) {
+                const currentText = currentIndicator.textContent.trim();
+                const previousText = previousIndicator.textContent.trim();
+
+                // Извлекаем числа, которые могут содержать пробелы, запятые и знак минуса
+                const currentValues = extractNumbers(currentText);
+                const previousValues = extractNumbers(previousText);
+
+                // Если нет чисел, пропускаем
+                if (currentValues.length === 0 || previousValues.length === 0) {
+                    return;
+                }
+
+                // Предполагаем, что первое число является основным значением
+                const currentValue = parseFloat(currentValues[0].replace(/,/g, '').replace(/\s/g, ''));
+                const previousValue = parseFloat(previousValues[0].replace(/,/g, '').replace(/\s/g, ''));
+
+                if (isNaN(currentValue) || isNaN(previousValue)) {
+                    // Если значения не являются числами, пропускаем
+                    return;
+                }
+
+                const percentageIncrease = calculatePercentageIncrease(currentValue, previousValue);
+
+                // Удаляем предыдущий элемент result, если он существует
+                const existingResult = currentIndicator.querySelector('.result');
+                if (existingResult) {
+                    existingResult.remove();
+                }
+
+                if (percentageIncrease !== 'N/A' && !isNaN(percentageIncrease) && percentageIncrease !== 0) {
+                    const resultElement = document.createElement('span');
+                    resultElement.classList.add('result');
+                    if (percentageIncrease > 0) {
+                        resultElement.classList.add('gain');
+                    } else if (percentageIncrease < 0) {
+                        resultElement.classList.add('loss');
+                    }
+
+                    resultElement.textContent = `${percentageIncrease > 0 ? '+' : ''}${percentageIncrease.toFixed(0)}%`;
+
+                    currentIndicator.appendChild(resultElement);
+                }
+            }
+        });
+    }
+
+    function extractNumbers(text) {
+        // Регулярное выражение для извлечения чисел, которые могут содержать пробелы, запятые и знак минуса
+        const regex = /-?\d{1,3}(?:[\s,]?\d{3})*(?:\.\d+)?/g;
+        const matches = text.match(regex);
+        return matches ? matches : [];
+    }
+
+    function calculatePercentageIncrease(currentValue, previousValue) {
+        if (previousValue === 0) {
+            return previousValue === 0 ? 'N/A' : 100;
+        }
+        // Вычисляем изменение в процентах с учетом знака
+        return ((currentValue - previousValue) / Math.abs(previousValue)) * 100;
+    }
 }
 
 // Обработчик клика на индикаторы в фиксированном столбце
@@ -667,6 +745,26 @@ document.querySelectorAll('.swiper-slide .indicator-row').forEach(row => {
         const clickedIndicatorId = this.getAttribute('data-indicator');
         toggleGraphContainers(clickedIndicatorId);
         setAsideFrameWidth();
+    });
+});
+
+// Обработчик события mouseenter для всех элементов .indicator-row
+document.querySelectorAll('.indicator-row').forEach(row => {
+    row.addEventListener('mouseenter', function() {
+        const dataIndicator = this.getAttribute('data-indicator');
+        // Находим все элементы с таким же data-indicator
+        const relatedRows = document.querySelectorAll(`.indicator-row[data-indicator="${dataIndicator}"]`);
+        // Добавляем класс highlight
+        relatedRows.forEach(r => r.classList.add('highlight'));
+    });
+
+    // Обработчик события mouseleave для всех элементов .indicator-row
+    row.addEventListener('mouseleave', function() {
+        const dataIndicator = this.getAttribute('data-indicator');
+        // Находим все элементы с таким же data-indicator
+        const relatedRows = document.querySelectorAll(`.indicator-row[data-indicator="${dataIndicator}"]`);
+        // Удаляем класс highlight
+        relatedRows.forEach(r => r.classList.remove('highlight'));
     });
 });
 
