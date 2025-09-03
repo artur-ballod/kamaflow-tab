@@ -1,0 +1,40 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="static/css/styles.css")
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+    body.body
+        main.main
+            .portfolio-filter
+                article.portfolio-filter__wrap
+                    //- 
+                    section.portfolio-filter__item
+                        .portfolio-filter__body
+                            for industry in industries
+                                +checkbox(industry.name, industry.nr, 'portfolio__label', industry.type)
+                    //- 
+                    section.portfolio-filter__item
+                        .portfolio-filter__body.portfolio-filter__body--range
+                            .portfolio-filter__range.range
+                                each slider in sliders
+                                    +range-slider(slider)
+                    button(type="reset").portfolio-filter__reset Сбросить фильтр
+
+        script(src="static/js/libs.js")
+        script(src="static/js/portfolio.js")
+        block script

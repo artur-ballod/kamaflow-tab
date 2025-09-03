@@ -1,0 +1,115 @@
+.manager-widget {
+	width: 100%;
+	max-width: toRem(350);
+	padding: toRem(12);
+	@include flex-setting(column, flex-start, flex-start);
+	gap: toRem(12);
+	background-color: #ffffff;
+	border-radius: toRem(12);
+	box-shadow: 0 toRem(4) toRem(40) 0 rgba(0, 0, 0, 0.2);
+
+	&__data {
+		width: 100%;
+		display: grid;
+		grid-template-columns: toRem(80) 1fr;
+		column-gap: toRem(16);
+		justify-content: start;
+		align-items: center;
+		padding-bottom: toRem(12);
+		border-bottom: toRem(1) solid #d9d9d9;
+	}
+
+	&__frame {
+		grid-column: 1 / 2;
+		grid-row: 1 / 3;
+	}
+
+	&__name {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		@include font-setting($primary-font, toRem(16), 125%, 600, #000000);
+		text-align: left;
+	}
+
+	&__position {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		@include font-setting($primary-font, toRem(14), 114%, 400, #939598);
+		text-align: left;
+	}
+
+	&__list {
+		width: 100%;
+		@include flex-setting(row, center, center);
+		gap: toRem(12);
+		
+	}
+
+	&__list-item {
+		@include flex-setting(column, center, center);
+		flex-shrink: 0;
+		width: toRem(44);
+		height: toRem(44);
+	}
+
+	&__list-link {
+		display: inline-flex;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@include min-screen(1440px) {
+	.manager-widget {
+		max-width: toRem(294);
+		padding: toRem(24);
+		gap: toRem(16);
+
+		&__data {
+			width: 100%;
+			@include flex-setting(column, flex-start, flex-start);	
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+
+		&__frame {
+			flex-shrink: 0;
+			width: toRem(100);
+			height: toRem(100);
+			margin-bottom: toRem(16);
+		}
+
+		&__name {
+			font-size: toRem(20);
+			line-height: 120%;
+			margin-bottom: toRem(4);
+		}
+
+		&__position {
+			font-size: toRem(18);
+			line-height: 122%;
+		}
+
+		&__list {
+			justify-content: flex-start;
+			gap: toRem(6);
+			
+		}
+
+		&__list-item {
+			width: toRem(48);
+			height: toRem(48);
+		}
+
+		&__list-icon {
+			transition: 0.25s $cubic;
+		}
+
+		&__list-link {
+			&:hover > img {
+				opacity: 0.6;
+				transition: 0.25s $cubic;
+			}
+		}
+	}
+}

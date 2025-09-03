@@ -1,0 +1,28 @@
+mixin setting(type, label, placeholder, name, info)
+	li.settings__item
+		.settings__wrap
+			label.settings__label(for=type)= label
+			input.settings__input(type=type name=name id=type placeholder=placeholder disabled)
+			button(type="button" data-field=name).settings__btn
+		if (info)
+			.settings__info.settings__info--hidden
+				span.settings__note Пожалуйста, подтвердите адрес электронной почты
+				span.settings__action
+					button(type="button") Отправить 
+					| сообщение на почту еще один раз.
+
+mixin checkbox(text, number, className, type)
+	input.portfolio__input(type="checkbox" name=type id=type )
+	label(class=className + ' ' for=type) 
+		span(class=className +'-text') #{text}
+		span(class=className +'-number') #{number}
+
+mixin range-slider(slider)
+	.range__item
+		span.range__label= slider.label
+		.range__input(id=`slider-${slider.id}`)
+		.range__values
+			span.range__values-nr(id=`value-${slider.id}-1`) 0
+			|  &nbsp;-&nbsp; 
+			span.range__values-nr(id=`value-${slider.id}-2`) 0
+			|  млрд Р

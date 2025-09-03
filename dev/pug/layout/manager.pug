@@ -1,0 +1,37 @@
+include ../helpers/mixins
+
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="static/css/styles.css")
+        //test ver only
+        meta(name="robots" content="noindex")
+        //end of test ver only
+    body.body
+        main.main
+            .manager-widget
+                .manager-widget__data
+                    picture.manager-widget__frame
+                        source(srcset="static/images/content/manager-photo_2x.webp 2x, static/images/content/manager-photo.webp 1x" type="image/webp")
+                        img.manager-widget__photo(src="static/img/manager-photo.png" alt="Фото менеджера")
+                    b.manager-widget__name Константинова Ивана Ивановна
+                    span.manager-widget__position Ваш персональный инвестиционный менеджер
+                ul.manager-widget__list
+                    for i in ['telegram', 'whatsapp', 'phone', 'email']
+                        li.manager-widget__list-item
+                            a.manager-widget__list-link(href="#")
+                                img.manager-widget__list-icon(src=`static/images/content/${i}.svg` alt="")
+        script(src="static/js/libs.js")
+        block script

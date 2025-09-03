@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head><!--test ver only-->
+    <meta name="robots" content="noindex"><!--end of test ver only-->
+    <meta charset="utf-8">
+    <title>KAMAFLOW investment filter for catalog</title><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"><!--test ver only-->
+    <meta name="robots" content="noindex"><!--end of test ver only-->
+</head>
+
+<body class="body">
+    <main class="main">
+        <div class="portfolio-filter">
+            <article class="portfolio-filter__wrap">
+                <section class="portfolio-filter__item">
+                    <div class="portfolio-filter__body"><input class="portfolio__input" type="checkbox" name="tech" id="tech" /><label class="portfolio__label " for="tech"> <span class="portfolio__label-text">Технологии</span><span class="portfolio__label-number">15</span></label><input class="portfolio__input" type="checkbox" name="fin" id="fin" /><label class="portfolio__label " for="fin"> <span class="portfolio__label-text">Финансы</span><span class="portfolio__label-number">23</span></label><input class="portfolio__input" type="checkbox" name="hea" id="hea" /><label class="portfolio__label " for="hea"> <span class="portfolio__label-text">Здравоохранение</span><span class="portfolio__label-number">7</span></label><input class="portfolio__input" type="checkbox" name="edu" id="edu" /><label class="portfolio__label " for="edu"> <span class="portfolio__label-text">Образование</span><span class="portfolio__label-number">12</span></label><input class="portfolio__input" type="checkbox" name="est" id="est" /><label class="portfolio__label " for="est"> <span class="portfolio__label-text">Недвижимость</span><span class="portfolio__label-number">9</span></label></div>
+                </section>
+                <section class="portfolio-filter__item">
+                    <div class="portfolio-filter__body portfolio-filter__body--range">
+                        <div class="portfolio-filter__range range">
+                            <div class="range__item"><span class="range__label">Оценка pre-money</span>
+                                <div class="range__input" id="slider-1"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-1-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-1-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Размер раунда</span>
+                                <div class="range__input" id="slider-2"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-2-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-2-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Доступная аллокация</span>
+                                <div class="range__input" id="slider-3"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-3-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-3-2">0</span> млрд Р</div>
+                            </div>
+                            <div class="range__item"><span class="range__label">Минимальное участие</span>
+                                <div class="range__input" id="slider-4"></div>
+                                <div class="range__values"><span class="range__values-nr" id="value-4-1">0</span> &nbsp;-&nbsp; <span class="range__values-nr" id="value-4-2">0</span> млрд Р</div>
+                            </div>
+                        </div>
+                    </div>
+                </section><button class="portfolio-filter__reset" type="reset">Сбросить фильтр</button>
+            </article>
+        </div>
+    </main>
+    <script src="static/js/libs.js"></script>
+    <script src="static/js/portfolio.js"></script>
+</body>
+
+</html>
