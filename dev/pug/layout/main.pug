@@ -18,184 +18,19 @@ html(lang="ru-RU")
         //test ver only
         meta(name="robots" content="noindex")
         //end of test ver only
-        script(type="application/json" id="data-json").
-            {
-                "months": [
-                "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
-                ],
-                "groups": [
-                {
-                    "title": "All metrics",
-                    "rows": []
-                },
-                {
-                    "title": "Key metrics",
-                    "rows": [
-                    {
-                        "name": "Кол-во New клиентов (шт.)",
-                        "data": [5, 7, 14, 14, 19, 28, 28, 28, 27, 27, 27, 27]
-                    },
-                    {
-                        "name": "Кол-во Return клиентов (шт.)",
-                        "data": [0, 4, 13, 17, 27, 42, 52, 62, 72, 82, 92, 103]
-                    },
-                    {
-                        "name": "Retention rate (%)",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "CPL (руб.)",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "CPP (руб.)",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "LTV (руб.)",
-                        "data": [239, 384, "", "", "", "", "", "", "", "", "", ""]
-                    }
-                    ]
-                },
-                {
-                    "title": "Lose",
-                    "rows": [
-                    {
-                        "name": "CAPEX",
-                        "data": ["1 658 857 ₽", "1 661 187 ₽", "2 175 067 ₽", "2 996 088 ₽", "3 156 963 ₽", "3 441 223 ₽", "3 180 394 ₽", "3 365 016 ₽", "3 490 671 ₽", "3 557 288 ₽", "3 655 989 ₽", "3 756 311 ₽"]
-                    },
-                    {
-                        "name": "ФОТ Dev (руб.)",
-                        "data": ["1 655 857 ₽", "1 658 187 ₽", "2 172 067 ₽", "2 993 088 ₽", "3 153 963 ₽", "3 438 223 ₽", "3 177 394 ₽", "3 362 016 ₽", "3 487 671 ₽", "3 554 288 ₽", "3 652 989 ₽", "3 753 311 ₽"]
-                    },
-                    {
-                        "name": "Лицензии на ПО (руб.)",
-                        "data": ["3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽"]
-                    },
-                    {
-                        "name": "OPEX",
-                        "data": ["550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000"]
-                    },
-                    {
-                        "name": "ФОТ Bus (руб.)",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "Маркетинг (руб.)",
-                        "data": ["500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽"]
-                    },
-                    {
-                        "name": "Инфраструктура (руб.)",
-                        "data": ["50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽"]
-                    },
-                    {
-                        "name": "Fix costs total",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "Total (руб.)",
-                        "data": ["2 208 857 ₽", "2 211 187 ₽", "2 725 067 ₽", "3 546 088 ₽", "3 706 963 ₽", "3 991 223 ₽", "3 730 394 ₽", "3 915 016 ₽", "4 040 671 ₽", "4 107 288 ₽", "4 205 989 ₽", "4 306 311 ₽"]
-                    }
-                    ]
-                },
-                {
-                    "title": "Pays",
-                    "rows": [
-                    {
-                        "name": "Выручка (руб.)",
-                        "data": ["147 840 ₽", "573 599 ₽", "1 644 058 ₽", "2 031 294 ₽", "3 209 622 ₽", "4 919 030 ₽", "5 834 354 ₽", "6 768 667 ₽", "7 721 246 ₽", "8 691 385 ₽", "9 678 398 ₽", "10 681 618 ₽"]
-                    },
-                    {
-                        "name": "Валовая прибыль (руб.)",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "Операционная прибыль (руб.)",
-                        "data": ["-2 061 017 ₽", "-1 637 589 ₽", "-1 081 009 ₽", "-1 514 794 ₽", "-497 341 ₽", "927 807 ₽", "2 103 961 ₽", "2 853 651 ₽", "3 680 575 ₽", "4 584 097 ₽", "5 472 409 ₽", "6 375 306 ₽"]
-                    },
-                    {
-                        "name": "Прибыль (руб.)",
-                        "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                    },
-                    {
-                        "name": "ROI (%)",
-                        "data": ["-93,31%", "-83,68%", "-66,89%", "-58,87%", "-47,17%", "-31,89%", "-17,00%", "-3,48%", "9,22%", "21,53%", "33,42%", "44,98%"]
-                    }
-                    ]
-                },
-                {
-                    "title": "KPI",
-                    "rows": [
-                    {
-                        "name": "GMV (руб.)",
-                        "data": ["", "", "2 365 497 ₽", "", "", "10 159 946 ₽", "", "", "20 324 268 ₽", "", "", "29 051 400 ₽"]
-                    },
-                    {
-                        "name": "Кол-во активных клиентов (шт.)",
-                        "data": ["", "", "10+", "", "", "40+", "", "", "70+", "", "", "100+"]
-                    },
-                    {
-                        "name": "Team bonus (руб.)",
-                        "data": ["", "", "236 550 ₽", "", "", "1 015 995 ₽", "", "", "2 032 427 ₽", "", "", "2 905 140 ₽"]
-                    }
-                    ]
-                }
-                ]
-            }
+
     body.body
         main.main
-            .project-content
-                ul.tabs
-                    li(data-tab-id="description").tabs-button Описание
-                    li(data-tab-id="parameters").tabs-button Параметры
-                    li(data-tab-id="team").tabs-button Команда
-                    li(data-tab-id="analytics").tabs-button.active Аналитика
-                .content-container
-                    .project-description.description.tab-content
-                        p 1
-                    .project-description.parameters.tab-content
-                        p 2
-                    .project-description.team.tab-content
-                        p 3
-
-                    //- забирать только этот таб/блок
-                    //- .project-description.analytics.tab-content.active
-                    //-     .analytic
-                    //-         .indicator-container
-                    //-         .analytic-content
-                    //-             .analytic-aside
-                    //-             .analytic-data
-                    //-     .analytic-controls
-                    //-         button(type="button" disabled).analytic-controls__btn.js-prev
-                    //-         button(type="button").analytic-controls__btn.js-next
-            //- //- Контейнер для слайдера и столбца индикаторов
-            //- .container
-            //-     //- Столбец индикаторов
-            //-     .indicators-column
-            //-         each indicator in indicators
-            //-             .indicator-row(data-indicator=indicator.id)
-            //-                 span.indicator-label= indicator.label
-            //-                 span.indicator-value= indicator.value
-
-            //-     //- Слайдер
-            //-     .slider.swiper-container
-            //-         .swiper-wrapper
-            //-             each month in months
-            //-                 .swiper-slide(data-month=month.id)
-            //-                     .swiper-slide__header
-            //-                         h3.swiper-slide__month= month.name
-            //-                         .swiper-slide__indicators
-            //-                             each indicator in month.indicators
-            //-                                 .indicator-row(data-indicator=indicator.id)
-            //-                                     span.indicator-label= indicator.label
-            //-                                     span.indicator-value= indicator.value
-            //-                 //- .swiper-slide__graph-container изначально отсутствует
-            .analytic
+        
+            .analytic(data-active-year=activeYear)
+                .year-selector
+                    button(data-year="2025" class=(activeYear === 2025 ? 'active' : '')) 2025
+                    button(data-year="2026" class=(activeYear === 2026 ? 'active' : '')) 2026
                 .indicator-container
                     .indicator-container__segment.last Last
                     .indicator-container__segment.now Current
                     .indicator-container__segment.future Future
+
                 .analytic-content
                     //- Столбец индикаторов
                     .analytic-aside
@@ -211,14 +46,15 @@ html(lang="ru-RU")
                         .swiper-wrapper
                             each month in months
                                 .analytic-data__block.swiper-slide(data-month=month.id)
-                                    .analytic-data__month.swiper= month.name
+                                    .analytic-data__month= month.name
                                     each group in month.groups
                                         .analytic-data__group
                                             .start-item
                                             .analytic-data__list
                                                 each indicator in group.indicators
                                                     .analytic-data__item.indicator-row(data-indicator=indicator.id)= indicator.value
-
+        script#analytics-json(type="application/json")
+            != JSON.stringify({ monthsByYear: monthsByYear, initialYear: activeYear })
         script(src="static/js/libs.js")
         script(src="static/js/main.js")
         block script

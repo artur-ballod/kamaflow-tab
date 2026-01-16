@@ -9,151 +9,12 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/css/styles.css"><!--test ver only-->
     <meta name="robots" content="noindex"><!--end of test ver only-->
-    <script type="application/json" id="data-json">
-        {
-            "months": [
-                "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
-            ],
-            "groups": [{
-                    "title": "All metrics",
-                    "rows": []
-                },
-                {
-                    "title": "Key metrics",
-                    "rows": [{
-                            "name": "Кол-во New клиентов (шт.)",
-                            "data": [5, 7, 14, 14, 19, 28, 28, 28, 27, 27, 27, 27]
-                        },
-                        {
-                            "name": "Кол-во Return клиентов (шт.)",
-                            "data": [0, 4, 13, 17, 27, 42, 52, 62, 72, 82, 92, 103]
-                        },
-                        {
-                            "name": "Retention rate (%)",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "CPL (руб.)",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "CPP (руб.)",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "LTV (руб.)",
-                            "data": [239, 384, "", "", "", "", "", "", "", "", "", ""]
-                        }
-                    ]
-                },
-                {
-                    "title": "Lose",
-                    "rows": [{
-                            "name": "CAPEX",
-                            "data": ["1 658 857 ₽", "1 661 187 ₽", "2 175 067 ₽", "2 996 088 ₽", "3 156 963 ₽", "3 441 223 ₽", "3 180 394 ₽", "3 365 016 ₽", "3 490 671 ₽", "3 557 288 ₽", "3 655 989 ₽", "3 756 311 ₽"]
-                        },
-                        {
-                            "name": "ФОТ Dev (руб.)",
-                            "data": ["1 655 857 ₽", "1 658 187 ₽", "2 172 067 ₽", "2 993 088 ₽", "3 153 963 ₽", "3 438 223 ₽", "3 177 394 ₽", "3 362 016 ₽", "3 487 671 ₽", "3 554 288 ₽", "3 652 989 ₽", "3 753 311 ₽"]
-                        },
-                        {
-                            "name": "Лицензии на ПО (руб.)",
-                            "data": ["3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽", "3 000 ₽"]
-                        },
-                        {
-                            "name": "OPEX",
-                            "data": ["550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000", "550000"]
-                        },
-                        {
-                            "name": "ФОТ Bus (руб.)",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "Маркетинг (руб.)",
-                            "data": ["500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽", "500 000 ₽"]
-                        },
-                        {
-                            "name": "Инфраструктура (руб.)",
-                            "data": ["50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽", "50 000 ₽"]
-                        },
-                        {
-                            "name": "Fix costs total",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "Total (руб.)",
-                            "data": ["2 208 857 ₽", "2 211 187 ₽", "2 725 067 ₽", "3 546 088 ₽", "3 706 963 ₽", "3 991 223 ₽", "3 730 394 ₽", "3 915 016 ₽", "4 040 671 ₽", "4 107 288 ₽", "4 205 989 ₽", "4 306 311 ₽"]
-                        }
-                    ]
-                },
-                {
-                    "title": "Pays",
-                    "rows": [{
-                            "name": "Выручка (руб.)",
-                            "data": ["147 840 ₽", "573 599 ₽", "1 644 058 ₽", "2 031 294 ₽", "3 209 622 ₽", "4 919 030 ₽", "5 834 354 ₽", "6 768 667 ₽", "7 721 246 ₽", "8 691 385 ₽", "9 678 398 ₽", "10 681 618 ₽"]
-                        },
-                        {
-                            "name": "Валовая прибыль (руб.)",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "Операционная прибыль (руб.)",
-                            "data": ["-2 061 017 ₽", "-1 637 589 ₽", "-1 081 009 ₽", "-1 514 794 ₽", "-497 341 ₽", "927 807 ₽", "2 103 961 ₽", "2 853 651 ₽", "3 680 575 ₽", "4 584 097 ₽", "5 472 409 ₽", "6 375 306 ₽"]
-                        },
-                        {
-                            "name": "Прибыль (руб.)",
-                            "data": ["", "", "", "", "", "", "", "", "", "", "", ""]
-                        },
-                        {
-                            "name": "ROI (%)",
-                            "data": ["-93,31%", "-83,68%", "-66,89%", "-58,87%", "-47,17%", "-31,89%", "-17,00%", "-3,48%", "9,22%", "21,53%", "33,42%", "44,98%"]
-                        }
-                    ]
-                },
-                {
-                    "title": "KPI",
-                    "rows": [{
-                            "name": "GMV (руб.)",
-                            "data": ["", "", "2 365 497 ₽", "", "", "10 159 946 ₽", "", "", "20 324 268 ₽", "", "", "29 051 400 ₽"]
-                        },
-                        {
-                            "name": "Кол-во активных клиентов (шт.)",
-                            "data": ["", "", "10+", "", "", "40+", "", "", "70+", "", "", "100+"]
-                        },
-                        {
-                            "name": "Team bonus (руб.)",
-                            "data": ["", "", "236 550 ₽", "", "", "1 015 995 ₽", "", "", "2 032 427 ₽", "", "", "2 905 140 ₽"]
-                        }
-                    ]
-                }
-            ]
-        }
-    </script>
 </head>
 
 <body class="body">
     <main class="main">
-        <div class="project-content">
-            <ul class="tabs">
-                <li class="tabs-button" data-tab-id="description">Описание</li>
-                <li class="tabs-button" data-tab-id="parameters">Параметры</li>
-                <li class="tabs-button" data-tab-id="team">Команда</li>
-                <li class="tabs-button active" data-tab-id="analytics">Аналитика</li>
-            </ul>
-            <div class="content-container">
-                <div class="project-description description tab-content">
-                    <p>1</p>
-                </div>
-                <div class="project-description parameters tab-content">
-                    <p>2</p>
-                </div>
-                <div class="project-description team tab-content">
-                    <p>3</p>
-                </div>
-            </div>
-        </div>
-        <div class="analytic">
+        <div class="analytic" data-active-year="2026">
+            <div class="year-selector"><button data-year="2025">2025</button><button class="active" data-year="2026">2026</button></div>
             <div class="indicator-container">
                 <div class="indicator-container__segment last">Last</div>
                 <div class="indicator-container__segment now">Current</div>
@@ -195,8 +56,8 @@
                 </div>
                 <div class="analytic-data slider swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Январь</div>
+                        <div class="analytic-data__block swiper-slide" data-month="jan">
+                            <div class="analytic-data__month">Январь</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
@@ -211,22 +72,22 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">1 658 857</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">1 655 857</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7">1 658 857</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8">1 655 857</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 725 067</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 725 067</div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">147 840</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15">147 840</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">-2 061 017</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17">-2 061 017</div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="19">-93,31</div>
                                 </div>
@@ -240,40 +101,40 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Февраль</div>
+                        <div class="analytic-data__block swiper-slide" data-month="feb">
+                            <div class="analytic-data__month">Февраль</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">7</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">4</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="6">384</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">1 661 187</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">1 658 187</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 211 187</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">573 599</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">-1 637 589</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-83,68</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -285,13 +146,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Март</div>
+                        <div class="analytic-data__block swiper-slide" data-month="mar">
+                            <div class="analytic-data__month">Март</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">14</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">13</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -301,69 +162,24 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">2 175 067</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">2 172 067</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">2 725 067</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">1 644 058</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">-1 081 009</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-66,89</div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="20">2 365 497</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="21">10+</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="22">236 550</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Апрель</div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">14</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">17</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">2 996 088</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">2 993 088</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 546 088</div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">2 031 294 ₽</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">-1 514 794</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-58,87</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -375,13 +191,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Май</div>
+                        <div class="analytic-data__block swiper-slide" data-month="apr">
+                            <div class="analytic-data__month">Апрель</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">19</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">27</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -391,24 +207,24 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 156 963</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 153 963</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 706 963</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">3 209 622</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">-497 341</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-47,17</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -420,13 +236,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Июнь</div>
+                        <div class="analytic-data__block swiper-slide" data-month="may">
+                            <div class="analytic-data__month">Май</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">28</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">42</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -436,69 +252,24 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 441 223</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 438 223</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 991 223</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">4 919 030</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">927 807</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-31,89</div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="20">10 159 946</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="21">40+</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="22">1 015 995</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Июль</div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">28</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">52</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 180 394</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 177 394</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 730 394</div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">5 834 354</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">2 103 961</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-17,00</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -510,13 +281,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Август</div>
+                        <div class="analytic-data__block swiper-slide" data-month="jun">
+                            <div class="analytic-data__month">Июнь</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">28</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">62</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -526,24 +297,24 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 365 016</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 362 016</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">3 915 016</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">6 768 667</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">2 853 651</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">-3,48</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -555,13 +326,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Сентябрь</div>
+                        <div class="analytic-data__block swiper-slide" data-month="jul">
+                            <div class="analytic-data__month">Июль</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">72</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -571,69 +342,24 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 490 671</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 487 671</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 040 671</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">7 721 246</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">3 680 575</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">9,22</div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="20">20 324 268</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="21">70+</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="22">2 032 427</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Октябрь</div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">82</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 557 288</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 554 288</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 107 288</div>
-                                </div>
-                            </div>
-                            <div class="analytic-data__group">
-                                <div class="start-item"></div>
-                                <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">8 691 385</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">4 584 097</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">21,53</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -645,13 +371,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Ноябрь</div>
+                        <div class="analytic-data__block swiper-slide" data-month="aug">
+                            <div class="analytic-data__month">Август</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">92</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -661,24 +387,24 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 655 989</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 652 989</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 205 989</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">9 678 398</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">5 472 409</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">33,42</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
@@ -690,13 +416,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="analytic-data__block swiper-slide">
-                            <div class="analytic-data__month swiper">Декабрь</div>
+                        <div class="analytic-data__block swiper-slide" data-month="sep">
+                            <div class="analytic-data__month">Сентябрь</div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="1">27</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="2">103</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="3"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="4"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="5"></div>
@@ -706,32 +432,167 @@
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="7">3 756 311</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="8">3 753 311</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="9">3 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="10">550 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="11">500 000</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="12">50 000</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="13"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="14">4 306 311</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="15">10 681 618</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="16"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="17">6 375 306</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
                                     <div class="analytic-data__item indicator-row" data-indicator="18"></div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="19">44,98</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
                                 </div>
                             </div>
                             <div class="analytic-data__group">
                                 <div class="start-item"></div>
                                 <div class="analytic-data__list">
-                                    <div class="analytic-data__item indicator-row" data-indicator="20">29 051 400</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="21">100+</div>
-                                    <div class="analytic-data__item indicator-row" data-indicator="22">2 905 140</div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide" data-month="oct">
+                            <div class="analytic-data__month">Октябрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide" data-month="nov">
+                            <div class="analytic-data__month">Ноябрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analytic-data__block swiper-slide" data-month="dec">
+                            <div class="analytic-data__month">Декабрь</div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="1"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="2"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="3"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="4"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="5"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="6"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="7"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="8"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="9"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="10"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="11"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="12"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="13"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="14"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="15"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="16"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="17"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="18"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="19"></div>
+                                </div>
+                            </div>
+                            <div class="analytic-data__group">
+                                <div class="start-item"></div>
+                                <div class="analytic-data__list">
+                                    <div class="analytic-data__item indicator-row" data-indicator="20"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="21"></div>
+                                    <div class="analytic-data__item indicator-row" data-indicator="22"></div>
                                 </div>
                             </div>
                         </div>
@@ -740,6 +601,1887 @@
             </div>
         </div>
     </main>
+    <script id="analytics-json" type="application/json">
+        {
+            "monthsByYear": {
+                "2025": [{
+                    "id": "jan",
+                    "name": "Январь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "52222"
+                        }, {
+                            "id": 2,
+                            "value": "0"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": "239"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "1 658 857"
+                        }, {
+                            "id": 8,
+                            "value": "1 655 857"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "2 725 067"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "147 840"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "-2 061 017"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-93,31"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "feb",
+                    "name": "Февраль",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "7"
+                        }, {
+                            "id": 2,
+                            "value": "4"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": "384"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "1 661 187"
+                        }, {
+                            "id": 8,
+                            "value": "1 658 187"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "2 211 187"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "573 599"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "-1 637 589"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-83,68"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "mar",
+                    "name": "Март",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "14"
+                        }, {
+                            "id": 2,
+                            "value": "13"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "2 175 067"
+                        }, {
+                            "id": 8,
+                            "value": "2 172 067"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "2 725 067"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "1 644 058"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "-1 081 009"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-66,89"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": "2 365 497"
+                        }, {
+                            "id": 21,
+                            "value": "10+"
+                        }, {
+                            "id": 22,
+                            "value": "236 550"
+                        }]
+                    }]
+                }, {
+                    "id": "apr",
+                    "name": "Апрель",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "14"
+                        }, {
+                            "id": 2,
+                            "value": "17"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "2 996 088"
+                        }, {
+                            "id": 8,
+                            "value": "2 993 088"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "3 546 088"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "2 031 294 ₽"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "-1 514 794"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-58,87"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "may",
+                    "name": "Май",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "19"
+                        }, {
+                            "id": 2,
+                            "value": "27"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 156 963"
+                        }, {
+                            "id": 8,
+                            "value": "3 153 963"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "3 706 963"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "3 209 622"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "-497 341"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-47,17"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "jun",
+                    "name": "Июнь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "28"
+                        }, {
+                            "id": 2,
+                            "value": "42"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 441 223"
+                        }, {
+                            "id": 8,
+                            "value": "3 438 223"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "3 991 223"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "4 919 030"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "927 807"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-31,89"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": "10 159 946"
+                        }, {
+                            "id": 21,
+                            "value": "40+"
+                        }, {
+                            "id": 22,
+                            "value": "1 015 995"
+                        }]
+                    }]
+                }, {
+                    "id": "jul",
+                    "name": "Июль",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "28"
+                        }, {
+                            "id": 2,
+                            "value": "52"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 180 394"
+                        }, {
+                            "id": 8,
+                            "value": "3 177 394"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "3 730 394"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "5 834 354"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "2 103 961"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-17,00"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "aug",
+                    "name": "Август",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "28"
+                        }, {
+                            "id": 2,
+                            "value": "62"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 365 016"
+                        }, {
+                            "id": 8,
+                            "value": "3 362 016"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "3 915 016"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "6 768 667"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "2 853 651"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-3,48"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "sep",
+                    "name": "Сентябрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "27"
+                        }, {
+                            "id": 2,
+                            "value": "72"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 490 671"
+                        }, {
+                            "id": 8,
+                            "value": "3 487 671"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "4 040 671"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "7 721 246"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "3 680 575"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "9,22"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": "20 324 268"
+                        }, {
+                            "id": 21,
+                            "value": "70+"
+                        }, {
+                            "id": 22,
+                            "value": "2 032 427"
+                        }]
+                    }]
+                }, {
+                    "id": "oct",
+                    "name": "Октябрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "27"
+                        }, {
+                            "id": 2,
+                            "value": "82"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 557 288"
+                        }, {
+                            "id": 8,
+                            "value": "3 554 288"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "4 107 288"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "8 691 385"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "4 584 097"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "21,53"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "nov",
+                    "name": "Ноябрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "27"
+                        }, {
+                            "id": 2,
+                            "value": "92"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 655 989"
+                        }, {
+                            "id": 8,
+                            "value": "3 652 989"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "4 205 989"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "9 678 398"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "5 472 409"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "33,42"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "dec",
+                    "name": "Декабрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "27"
+                        }, {
+                            "id": 2,
+                            "value": "103"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "3 756 311"
+                        }, {
+                            "id": 8,
+                            "value": "3 753 311"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "4 306 311"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "10 681 618"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "6 375 306"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "44,98"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": "29 051 400"
+                        }, {
+                            "id": 21,
+                            "value": "100+"
+                        }, {
+                            "id": 22,
+                            "value": "2 905 140"
+                        }]
+                    }]
+                }],
+                "2026": [{
+                    "id": "jan",
+                    "name": "Январь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": "5"
+                        }, {
+                            "id": 2,
+                            "value": "0"
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": "239"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": "1 658 857"
+                        }, {
+                            "id": 8,
+                            "value": "1 655 857"
+                        }, {
+                            "id": 9,
+                            "value": "3 000"
+                        }, {
+                            "id": 10,
+                            "value": "550 000"
+                        }, {
+                            "id": 11,
+                            "value": "500 000"
+                        }, {
+                            "id": 12,
+                            "value": "50 000"
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": "2 725 067"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": "147 840"
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": "-2 061 017"
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": "-93,31"
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "feb",
+                    "name": "Февраль",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "mar",
+                    "name": "Март",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "apr",
+                    "name": "Апрель",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "may",
+                    "name": "Май",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "jun",
+                    "name": "Июнь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "jul",
+                    "name": "Июль",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "aug",
+                    "name": "Август",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "sep",
+                    "name": "Сентябрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "oct",
+                    "name": "Октябрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "nov",
+                    "name": "Ноябрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }, {
+                    "id": "dec",
+                    "name": "Декабрь",
+                    "groups": [{
+                        "indicators": [{
+                            "id": 1,
+                            "value": ""
+                        }, {
+                            "id": 2,
+                            "value": ""
+                        }, {
+                            "id": 3,
+                            "value": ""
+                        }, {
+                            "id": 4,
+                            "value": ""
+                        }, {
+                            "id": 5,
+                            "value": ""
+                        }, {
+                            "id": 6,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 7,
+                            "value": ""
+                        }, {
+                            "id": 8,
+                            "value": ""
+                        }, {
+                            "id": 9,
+                            "value": ""
+                        }, {
+                            "id": 10,
+                            "value": ""
+                        }, {
+                            "id": 11,
+                            "value": ""
+                        }, {
+                            "id": 12,
+                            "value": ""
+                        }, {
+                            "id": 13,
+                            "value": ""
+                        }, {
+                            "id": 14,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 15,
+                            "value": ""
+                        }, {
+                            "id": 16,
+                            "value": ""
+                        }, {
+                            "id": 17,
+                            "value": ""
+                        }, {
+                            "id": 18,
+                            "value": ""
+                        }, {
+                            "id": 19,
+                            "value": ""
+                        }]
+                    }, {
+                        "indicators": [{
+                            "id": 20,
+                            "value": ""
+                        }, {
+                            "id": 21,
+                            "value": ""
+                        }, {
+                            "id": 22,
+                            "value": ""
+                        }]
+                    }]
+                }]
+            },
+            "initialYear": 2026
+        }
+    </script>
     <script src="static/js/libs.js"></script>
     <script src="static/js/main.js"></script>
 </body>
